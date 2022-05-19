@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Teachers Dashboard</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    
+
+    <!-- Bootstrap core CSS -->
+ <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+ <link href="dashboard.css" rel="stylesheet">
+
+ 
+
+
+
+    <style>
+
+     .imma{
+      width:25%;
+      height: 20%;
+      background: white;
+      background: black;
+      }
+
+    
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+       #topp{
+        width:16.7%;
+        background: white;
+        color: black; 
+      }
+
+      .sideb{
+        background: #2C3E50;
+        overflow-y: scroll;
+      }
+      .sideb #aa{
+        color: white;
+      }
+      .sideb #aaa{
+        color: #D35400;
+      }
+      .sideb #aaa1{
+        color: #D35400;
+        margin-left: 9%;
+      }
+      .sideb #aaa hover:{
+        color: white;
+      }
+      .sideb .endside{
+        background:#2C3E50 ;
+      }
+      #userbg{
+
+      }
+
+      #user{
+        color: black;
+      }
+
+     
+
+      .tre{
+        background: red;
+        border-radius: 5px;
+        margin-left: -5%;
+        margin-right: 13%;
+        padding-left: 2%;
+        padding-right: 2%;
+        color: white;
+        margin-left: -8%;
+        opacity: 0.7;
+        font-size: 10px;
+      }
+      .bel{
+       color: #808B96;
+       margin-left: -8%;
+       padding-right: 2%;
+
+      }
+      .prof{
+        width: 2.5em;
+        height: 2em;
+        border-radius: 35px;
+        margin-left: 4%;
+      }
+      .dropp1{
+        margin-left:8%;
+        margin-right: 1%;
+      }
+      
+      .dropp2{
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .dropp2:hover {
+        color: white;
+      }
+      .menuu{
+        width: 90%;
+        margin-top: 2%;
+      } 
+ 
+
+      .menuu  a{
+        width: 100%;
+        text-decoration: none;
+        color: black;
+        margin-left: 2%;
+      }
+      .menuu #aaa{
+        padding-right: 2%;
+      }
+      .menuu #wok{
+        margin-left: 2%;
+        margin-top: -9%;
+      }
+      .menuu #wok:hover{
+        background: #F2F3F4;
+      }
+
+      .menuu a:hover {
+        background: #F2F3F4;
+        width: 100%;
+        margin-bottom: 1%;
+      }
+
+      .doit{
+        margin-top: 3%;
+      }
+
+
+      .doit .dropdown .pagess{
+        margin-left: 9%;
+      }
+
+      
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+        
+
+
+      }
+
+      @media(max-width: 768px){
+        #topp{
+        width:30.4%;
+        background: transparent;
+        color: black;
+        border: 0.1px solid white; 
+      }
+
+
+      .dropp1{
+        margin-left:3%;
+        margin-right: 1%;
+      }
+      }
+
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+   
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-0 shadow" >
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 naa" href="#" id="topp"><span ><img src="../../../img/skuls4.png"class="imma"></span><span style="color:   #d35400  ;">SKULS</span><span style="color:  #1a5276 ;">TECH</span></a>
+  <button style="background: #707B7C;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" id="menu" ></span>
+  </button>
+  <span class="form-control form-control-dark w-100" type="text"  aria-label="Search"  ></span>
+  <div class="navbar-nav endside" id="userbg">
+    <div class="nav-item text-nowrap">
+       
+       <ul style="list-style-type:none">
+        <li class="nav-item dropdown no-arrow">
+      <a class="nav-link px-3" href="#" id="user">
+
+        <i class="fas fa-bell fa-fw bel"></i>
+        <span class="tre">3+</span>
+        
+        <span class="mr-2 d-none d-lg-inline text-gray-600 small">Paul Tengey</span>
+        <img class="img-profile rounded-circle" src="../img/undraw_profile.svg" style="height: 2em; width:2em">
+
+
+       </a> 
+
+     </li>
+    
+    </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse sideb">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <pre></pre>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" id="aa">
+              <span data-feather="home" id="aaa"></span>
+              Dashboard
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="layers" id="aaa"></span>
+              Student Bio Data
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="file-text" id="aaa"></span>
+              Student Results
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="file-text" id="aaa"></span>
+              Student Fees
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="file-text" id="aaa"></span>
+              Assignments
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="file-text" id="aaa"></span>
+              Notice Board
+            </a>
+          </li>
+
+
+
+           <li class="nav-item doit" >
+               
+                  <div class="dropdown" style="width:100%; background: transparent;">
+                    <i data-feather="bar-chart-2" id="aaa1" class="pagess"></i>
+                   <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Reports
+                   <span class="caret"></span></a>                
+                    
+                   <ul class="dropdown-menu menuu" >
+
+                   <center><span  style="margin-bottom:2%;color:  #99a3a4 ;">Reports To Generate</span><br></center> 
+                    <a href="income_statement.php" ><li id="wok" ><i data-feather="shopping-cart" id="aaa"></i>income</li></a>
+
+                    <a href="expenses_statement.php" ><li id="wok" ><i data-feather="file" id="aaa"></i>expenses</li></a>
+                    
+
+                    <a href="income_expenditure.php" ><li id="wok" ><i data-feather="users" id="aaa"></i>income & expenses</li></a>
+
+
+                    <a href="expenses_statement.php" ><li id="wok" ><i data-feather="shopping-cart" id="aaa"></i>staff</li></a>
+
+                    <a href="income_statement.php" ><li id="wok" ><i data-feather="user" id="aaa"></i>assets</li></a>
+
+                   
+                    </ul>
+                 </div>
+            </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="layers" id="aaa"></span>
+              Integrations
+            </a>
+          </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span style="color:gold">Saved reports</span>
+          <a class="link-secondary" href="#" aria-label="Add a new report" id="aa">
+            <span data-feather="plus-circle" id="aaa"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="file-text" id="aaa"></span>
+              Current month
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="file-text" id="aaa"></span>
+              Last quarter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="file-text" id="aaa"></span>
+              Social engagement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="aa">
+              <span data-feather="file-text" id="aaa"></span>
+              Year-end sale
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2" style="color: black ">Teachers Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button>
+        </div>
+      </div>
+
+      <!-- Content Row1 -->
+                    <div class="row" >
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Teacher's No. of Class </div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id='' >3</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Teacher's No. of Course</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="">4</div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                         <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                                ToDo Task</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Total Debt</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">GHc300.00</div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Content Row1 -->
+
+                    <!-- Content Row2 -->
+                    <div class="row">
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 ">
+                                                SALARY</div>
+                                            <div class="h5 mb-0  font-weight-bold  sta" id="">Ghc 1500.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Assignments To Mark</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">School Resumes
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">2022-05-10</div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">School Vacates
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">2022-08-10</div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                    <!-- cont row 2 -->
+
+                    
+
+                    <div class="row">
+
+                        <!-- Area Chart -->
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Schools Performance in Past WAEC Exams</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area" style="height: 22.5em;">
+                                        <canvas id="myAreaChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pie Chart -->
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4 pb-2" style="height: 19.5em;">
+                                        <canvas id="myPieChart"></canvas>
+                                    </div>
+                                    <div class="mt-4 text-center small">
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-primary"></i> Direct
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-success"></i> Social
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-info"></i> Referral
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Dashboard Page Content Ends Here -->
+
+                    <!-- Content Row -->
+                    
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+
+
+
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+
+
+
+
+<script type="text/javascript">
+        
+
+        // Set new default font family and font color to mimic Bootstrap's default styling
+Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+Chart.defaults.global.defaultFontColor = '#858796';
+
+function number_format(number, decimals, dec_point, thousands_sep) {
+  // *     example: number_format(1234.56, 2, ',', ' ');
+  // *     return: '1 234,56'
+  number = (number + '').replace(',', '').replace(' ', '');
+  var n = !isFinite(+number) ? 0 : +number,
+    prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+    sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
+    dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
+    s = '',
+    toFixedFix = function(n, prec) {
+      var k = Math.pow(10, prec);
+      return '' + Math.round(n * k) / k;
+    };
+  // Fix for IE parseFloat(0.55).toFixed(0) = 0;
+  s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
+  if (s[0].length > 3) {
+    s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
+  }
+  if ((s[1] || '').length < prec) {
+    s[1] = s[1] || '';
+    s[1] += new Array(prec - s[1].length + 1).join('0');
+  }
+  return s.join(dec);
+}
+
+// Area Chart Example
+var ctx = document.getElementById("myAreaChart");
+var myLineChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    //labels:document.getElementById('daat').innerText.split(","),
+    labels: ["Term1", "Term2", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+
+    datasets: [{
+      label: "Earnings",
+      lineTension: 0.3,
+      backgroundColor: "rgba(78, 115, 223, 0.05)",
+      borderColor: "rgba(78, 115, 223, 1)",
+      pointRadius: 3,
+      pointBackgroundColor: "rgba(78, 115, 223, 1)",
+      pointBorderColor: "rgba(78, 115, 223, 1)",
+      pointHoverRadius: 3,
+      pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
+      pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+      pointHitRadius: 10,
+      pointBorderWidth: 2,
+      data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
+      
+       
+    }],
+  },
+  options: {
+    maintainAspectRatio: false,
+    layout: {
+      padding: {
+        left: 10,
+        right: 25,
+        top: 25,
+        bottom: 0
+      }
+    },
+    scales: {
+      xAxes: [{
+        time: {
+          unit: 'date'
+        },
+        gridLines: {
+          display: false,
+          drawBorder: false
+        },
+        ticks: {
+          maxTicksLimit: 7
+        }
+      }],
+      yAxes: [{
+        ticks: {
+          maxTicksLimit: 5,
+          padding: 10,
+          // Include a dollar sign in the ticks
+          callback: function(value, index, values) {
+            return 'Ghc' + number_format(value);
+          }
+        },
+        gridLines: {
+          color: "rgb(234, 236, 244)",
+          zeroLineColor: "rgb(234, 236, 244)",
+          drawBorder: false,
+          borderDash: [2],
+          zeroLineBorderDash: [2]
+        }
+      }],
+    },
+    legend: {
+      display: false
+    },
+    tooltips: {
+      backgroundColor: "rgb(255,255,255)",
+      bodyFontColor: "#858796",
+      titleMarginBottom: 10,
+      titleFontColor: '#6e707e',
+      titleFontSize: 14,
+      borderColor: '#dddfeb',
+      borderWidth: 1,
+      xPadding: 15,
+      yPadding: 15,
+      displayColors: false,
+      intersect: false,
+      mode: 'index',
+      caretPadding: 10,
+      callbacks: {
+        label: function(tooltipItem, chart) {
+          var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
+          return datasetLabel + ': Ghc' + number_format(tooltipItem.yLabel);
+        }
+      }
+    }
+  }
+});
+
+    </script>
+
+   <script type="text/javascript">
+    setInterval((
+        ()=>{
+
+             $.post("test.php",{sum:1},(res,stcode)=>{
+                let data=res.split(",")
+             $("#sum").html("GH&cent"+data[0]);
+             $("#yearsum").html("GH&cent"+data[1]);
+             $("#staff").html(data[2]);
+             $("#ex_id").html(data[3]);
+             
+
+             })
+ 
+        }
+
+        ),2000)
+    
+       
+   </script>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
+    
+
+
+  </body>
+</html>

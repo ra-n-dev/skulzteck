@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Teachers Dashboard</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet">
+
+
+
+
+
+    <style>
+        .imma {
+            width: 25%;
+            height: 20%;
+            background: white;
+            background: black;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        #topp {
+            width: 16.7%;
+            background: white;
+            color: black;
+        }
+        
+        .sideb {
+            background: #2C3E50;
+            overflow-y: scroll;
+        }
+        
+        .sideb #aa {
+            color: white;
+        }
+        
+        .sideb #aaa {
+            color: #D35400;
+        }
+        
+        .sideb #aaa1 {
+            color: #D35400;
+            margin-left: 9%;
+        }
+        
+        .sideb #aaa hover: {
+            color: white;
+        }
+        
+        .sideb .endside {
+            background: #2C3E50;
+        }
+        
+        #user {
+            color: black;
+        }
+        
+        .tre {
+            background: red;
+            border-radius: 5px;
+            margin-left: -5%;
+            margin-right: 13%;
+            padding-left: 2%;
+            padding-right: 2%;
+            color: white;
+            margin-left: -8%;
+            opacity: 0.7;
+            font-size: 10px;
+        }
+        
+        .bel {
+            color: #808B96;
+            margin-left: -8%;
+            padding-right: 2%;
+        }
+        
+        .prof {
+            width: 2.5em;
+            height: 2em;
+            border-radius: 35px;
+            margin-left: 4%;
+        }
+        
+        .dropp1 {
+            margin-left: 8%;
+            margin-right: 1%;
+        }
+        
+        .dropp2 {
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .dropp2:hover {
+            color: white;
+        }
+        
+        .menuu {
+            width: 90%;
+            margin-top: 2%;
+        }
+        
+        .menuu a {
+            width: 100%;
+            text-decoration: none;
+            color: black;
+            margin-left: 2%;
+        }
+        
+        .menuu #aaa {
+            padding-right: 2%;
+        }
+        
+        .menuu #wok {
+            margin-left: 2%;
+            margin-top: -9%;
+        }
+        
+        .menuu #wok:hover {
+            background: #F2F3F4;
+        }
+        
+        .menuu a:hover {
+            background: #F2F3F4;
+            width: 100%;
+            margin-bottom: 1%;
+        }
+        
+        .doit {
+            margin-top: 3%;
+        }
+        
+        .doit .dropdown .pagess {
+            margin-left: 9%;
+        }
+        
+        .cardd1 {
+            height: 25vh;
+        }
+        
+        .fn1 {
+            background: white;
+            height: 20em;
+            width: 40%;
+        }
+        
+        .fnn {
+            background: white;
+            width: 100%;
+        }
+        
+        .fn2 {
+            background: white;
+            width: 60%;
+            height: 20em;
+        }
+        
+        .tab1 {
+            margin-left: 1%;
+            height: 20em;
+            overflow-y: scroll;
+        }
+        
+        .tab1 table {
+            width: 99%;
+            margin-left: 1%;
+        }
+        
+        .tab1 ul {
+            list-style-type: none;
+        }
+        
+        .nott {
+            height: 20em;
+            overflow-y: scroll;
+        }
+        
+        .nott ul {
+            list-style-type: none;
+            margin-left: -6%;
+        }
+        
+        .nott ul li {
+            border-bottom: 1px solid black;
+            margin-bottom: 4%;
+            padding-bottom: 4%;
+        }
+        
+        .nott .d1 {
+            background: #1a5276;
+            text-decoration: none;
+            border-radius: 20px;
+            padding-top: 1px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            color: white;
+        }
+        
+        .tee {
+            background: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 0.5%;
+            padding-top: 0.5%;
+            border-radius: 20px;
+            color: black;
+            margin-left: 2%;
+            font-weight: bold;
+            border: 1px solid orange;
+        }
+        
+        .bett {
+            padding-right: 2%;
+        }
+        
+        .bet {
+            background: #f35017;
+            border-radius: 20px;
+            padding-right: 7px;
+            padding-left: 7px;
+            padding-bottom: 3px;
+            color: #f9c953;
+            margin-left: 24px;
+        }
+        
+        .mon {
+            background: #58d68d;
+            padding-right: 8%;
+            padding-left: 8%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            border-radius: 20px;
+            color: black;
+            margin-left: 23%;
+        }
+        
+        .tue {
+            background: #e67e22;
+            padding-right: 11%;
+            padding-left: 11%;
+            padding-bottom: 2%;
+            padding-top: 2%;
+            border-radius: 20px;
+            color: white;
+            margin-left: 23%;
+        }
+        
+        .wed {
+            background: #7d3c98;
+            padding-right: 8%;
+            padding-left: 8%;
+            padding-bottom: 2%;
+            padding-top: 2%;
+            border-radius: 20px;
+            color: white;
+            margin-left: 23%;
+        }
+        
+        .thur {
+            background: #95a5a6;
+            padding-right: 8%;
+            padding-left: 8%;
+            padding-bottom: 2%;
+            padding-top: 2%;
+            border-radius: 20px;
+            color: white;
+            margin-left: 23%;
+        }
+        
+        .fri {
+            background: black;
+            padding-right: 15%;
+            padding-left: 15%;
+            padding-bottom: 2%;
+            padding-top: 2%;
+            border-radius: 20px;
+            color: white;
+            margin-left: 23%;
+        }
+        
+        .dayw {
+            width: 17%;
+            border: 1px solid #d5dbdb;
+        }
+        
+        .dayw2 {
+            width: 42%;
+            border: 1px solid #d5dbdb;
+        }
+        
+        .dayw3 {
+            width: 20%;
+            border: 1px solid #d5dbdb;
+        }
+        
+        .dayw4 {
+            width: 37%;
+            border: 1px solid #d5dbdb;
+        }
+        
+        .new-class {
+            margin-top: 1%;
+            text-decoration: none;
+            margin-right: 2%;
+            background: #95a5a6;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px;
+            padding-right: 2%;
+            padding-left: 2%;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            border: 2px solid orange;
+        }
+        
+        .dd {
+            margin-right: 3%;
+        }
+        
+        .new-class2 {
+            float: right;
+            text-decoration: none;
+            margin-right: 8%;
+            background: #95a5a6;
+            color: white;
+            border-radius: 5px;
+            padding-right: 2%;
+            padding-left: 2%;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+        }
+        
+        .view {
+            text-decoration: none;
+        }
+        
+        .barr {
+            margin-top: 1%;
+        }
+        
+        .adx form input {
+            width: 100%;
+            height: 2.5em;
+            border-radius: 5px;
+            border: 0.3px solid black;
+            padding-left: 2%;
+        }
+        
+        .adx form select {
+            width: 100%;
+            height: 2.5em;
+            border-radius: 5px;
+            border: 0.3px solid black;
+            padding-left: 2%;
+            background: transparent;
+        }
+        
+        #www {
+            width: 24%;
+            height: 2em;
+            padding-left: 5%;
+            padding-top: 1%;
+        }
+        
+        #wwwwe {
+            width: 28%;
+            height: 2em;
+        }
+        
+        .subbx {
+            width: 73%;
+        }
+        
+        .subb .cancc {
+            opacity: 2;
+            background: green;
+            color: white;
+            border-radius: 5px;
+            border: 0.3px solid green;
+            text-decoration: none;
+        }
+        
+        .subbx .canc {
+            background: red;
+            color: white;
+            border-radius: 5px;
+            border: 0.3px solid red;
+            text-decoration: none;
+        }
+        
+        .subbx .cancc {
+            opacity: 2;
+            background: green;
+            color: white;
+            border-radius: 5px;
+            border: 0.3px solid green;
+            text-decoration: none;
+        }
+        
+        .pro {
+            opacity: 2;
+            background: black;
+            border-radius: 5px;
+            color: white;
+            border: 0.3px solid black;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        embed {
+            height: 100vh;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        @media(max-width: 768px) {
+            #topp {
+                width: 30.4%;
+                background: transparent;
+                color: black;
+                border: 0.1px solid white;
+            }
+            .dropp1 {
+                margin-left: 3%;
+                margin-right: 1%;
+            }
+            .fn1 {
+                background: white;
+                height: 20em;
+                width: 100%;
+            }
+            .fn2 {
+                background: white;
+                height: 20em;
+                width: 100%;
+            }
+            .tab1 {
+                height: 20em;
+                margin-left: 8%;
+                margin-left: -0.4%;
+            }
+            .mon {
+                background: #58d68d;
+                padding-right: 8%;
+                padding-left: 8%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                border-radius: 20px;
+                color: black;
+                margin-left: 23%;
+            }
+            .dayw {
+                width: 15%;
+            }
+            .dayw2 {
+                width: 36.5%;
+            }
+            .dayw3 {
+                width: 18%;
+            }
+            .dayw4 {
+                width: 29%;
+            }
+            .nott {
+                margin-left: 0%;
+                overflow-y: scroll;
+            }
+            .nott ul {
+                list-style-type: none;
+                margin-left: 0%;
+            }
+        }
+        
+        @media(max-width: 500px) {
+            .nott {
+                margin-left: -6%;
+                overflow-y: scroll;
+            }
+            .nott ul {
+                list-style-type: none;
+                margin-left: 0%;
+            }
+            .mon {
+                background: #58d68d;
+                padding-right: 8%;
+                padding-left: 8%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                border-radius: 20px;
+                color: black;
+                margin-left: 17%;
+            }
+            .tue {
+                background: #e67e22;
+                padding-right: 14%;
+                padding-left: 14%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                border-radius: 20px;
+                color: white;
+                margin-left: 17%;
+            }
+            .wed {
+                background: #7d3c98;
+                padding-right: 8%;
+                padding-left: 8%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                border-radius: 20px;
+                color: white;
+                margin-left: 17%;
+            }
+            .thur {
+                background: #95a5a6;
+                padding-right: 8%;
+                padding-left: 8%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                border-radius: 20px;
+                color: white;
+                margin-left: 17%;
+            }
+            .fri {
+                background: black;
+                padding-right: 20%;
+                padding-left: 20%;
+                padding-bottom: 1%;
+                padding-top: 1%;
+                border-radius: 20px;
+                color: white;
+                margin-left: 17%;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 naa" href="#" id="topp"><span ><img src="../../../img/skuls4.png"class="imma"></span><span style="color:   #d35400  ;">SKULS</span><span style="color:  #1a5276 ;">TECH</span></a>
+        <button style="background: #707B7C;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" id="menu" ></span>
+  </button>
+        <span class="form-control form-control-dark w-100" type="text" aria-label="Search"></span>
+        <div class="navbar-nav endside" id="userbg">
+            <div class="nav-item text-nowrap">
+
+                <ul style="list-style-type:none">
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link px-3" href="#" id="user">
+
+                            <i class="fas fa-bell fa-fw bel"></i>
+                            <span class="tre">3+</span>
+
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Paul Tengey</span>
+                            <img class="img-profile rounded-circle" src="../img/undraw_profile.svg" style="height: 2em; width:2em">
+
+
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="page1" class="home">
+        <div class="container-fluid">
+            <div class="row">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse sideb">
+                    <div class="position-sticky pt-3">
+                        <ul class="nav flex-column">
+                            <pre></pre>
+                            <li class="nav-item" onclick="loadDash()">
+                                <a class="nav-link active" aria-current="page" href="#" id="aa">
+                                    <span data-feather="home" id="aaa" class="bett"></span> Dashboard <span class="bet">Beta</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item" onclick="loadTech()" id="teachp">
+                                <a class="nav-link" href="#" id="aa">
+                                    <span data-feather="layers" id="aaa"></span> Profile
+                                </a>
+                            </li>
+
+                            <li class="nav-item" onclick="loadResults">
+                                <a class="nav-link" href="#" id="aa">
+                                    <span data-feather="file-text" id="aaa"></span> Upload Results
+                                </a>
+                            </li>
+
+                            <li class="nav-item" id="assign" onclick="loadAssign()">
+                                <a class="nav-link" href="#" id="aa">
+                                    <span data-feather="file-text" id="aaa"></span> Assignments
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="aa">
+                                    <span data-feather="file-text" id="aaa"></span> Exams
+                                </a>
+                            </li>
+
+
+
+                            <li class="nav-item doit">
+
+                                <div class="dropdown" style="width:100%; background: transparent;">
+                                    <i data-feather="bar-chart-2" id="aaa1" class="pagess"></i>
+                                    <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Reports
+                                   <span class="caret"></span></a>
+
+                                    <ul class="dropdown-menu menuu">
+
+                                        <center><span style="margin-bottom:2%;color:  #99a3a4 ;">Reports To Generate</span><br></center>
+                                        <a href="income_statement.php">
+                                            <li id="wok"><i data-feather="shopping-cart" id="aaa"></i>Terminal Report</li>
+                                        </a>
+
+                                        <a href="expenses_statement.php">
+                                            <li id="wok"><i data-feather="file" id="aaa"></i>Class List</li>
+                                        </a>
+
+
+                                        <a href="income_expenditure.php">
+                                            <li id="wok"><i data-feather="users" id="aaa"></i>Student List</li>
+                                        </a>
+
+
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="aa">
+                                    <span data-feather="layers" id="aaa"></span> Integrations
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                            <span style="color:gold">Saved reports</span>
+                            <a class="link-secondary" href="#" aria-label="Add a new report" id="aa">
+                                <span data-feather="plus-circle" id="aaa"></span>
+                            </a>
+                        </h6>
+                        <ul class="nav flex-column mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="aa">
+                                    <span data-feather="file-text" id="aaa"></span> Current month
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="aa">
+                                    <span data-feather="file-text" id="aaa"></span> Last quarter
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="aa">
+                                    <span data-feather="file-text" id="aaa"></span> Social engagement
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="aa">
+                                    <span data-feather="file-text" id="aaa"></span> Year-end sale
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="bodyy" id="bodyy">
+
+                    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                            <h5 class="tee">Paul's Work</h5>
+                            <div class="btn-toolbar mb-2 mb-md-0">
+                                <div class="btn-group me-2">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                                </div>
+                                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                      <span data-feather="calendar"></span>
+                       This week
+                      </button>
+                            </div>
+                        </div>
+
+                        <!--Come and try another-->
+
+                        <!--Content try something row-->
+
+                        <div class="row">
+
+                            <div class="row" style="margin-left:0.2%;margin-bottom: 2%;">
+                                <div class="card border-left-primary shadow h-100 py-2">
+                                    <embed src="files/results.pdf" type="application/pdf" class="file">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Content try something row ends here -->
+
+
+
+
+                        <!-- cont row 2 -->
+
+
+
+
+                        <!-- Dashboard Page Content Ends Here -->
+
+                        <!-- Content Row -->
+                    </main>
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+
+
+            <!-- Begining of Assignment page -->
+
+            <!-- End of Assignment page -->
+
+
+
+
+
+
+
+
+
+
+            <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+            <script src="dashboard.js"></script>
+
+
+
+
+
+
+
+
+            <!-- Bootstrap core JavaScript-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Core plugin JavaScript-->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin-2.min.js"></script>
+
+            <!-- Page level plugins -->
+            <script src="vendor/chart.js/Chart.min.js"></script>
+
+            <!-- Page level custom scripts -->
+            <script src="js/demo/chart-area-demo.js"></script>
+            <script src="js/demo/chart-pie-demo.js"></script>
+            <script src="js/demo/chart-bar-demo.js"></script>
+
+
+
+
+
+
+
+            <script>
+                function loadAssign() {
+                    window.location.href = "assignment.html";
+                }
+
+                function loadDash() {
+                    window.location.href = "index.html";
+                }
+            </script>
+
+
+            <script>
+                function onHover() {
+                    $(function() {
+                        $('#over1').tooltip({
+                            trigger: 'manual'
+                        }).tooltip('show');
+
+                    });
+                    $('#over1').tooltip('hidden')
+                }
+
+                function onHover2() {
+                    $(function() {
+                        $('#over2').tooltip({
+                            trigger: 'manual'
+                        }).tooltip('show');
+
+                    });
+                    $('#over2').tooltip('hidden')
+                }
+
+
+                function onHover3() {
+                    $(function() {
+                        $('#over3').tooltip({
+                            trigger: 'manual'
+                        }).tooltip('show');
+
+                    });
+                    $('#over3').tooltip('hidden')
+                }
+
+                function onHover4() {
+                    $(function() {
+                        $('#over4').tooltip({
+                            trigger: 'manual'
+                        }).tooltip('show');
+
+                    });
+                    $('#over4').tooltip('hidden')
+                }
+            </script>
+
+
+
+
+</body>
+
+</html>
