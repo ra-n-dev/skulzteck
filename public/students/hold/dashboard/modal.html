@@ -1,0 +1,57 @@
+<div class='modal fade adx' id='studsubmit' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Upload Solved Assignment</h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+                    <label>Subject</label><br>
+                    <select>
+                            <option value="physics">Physics</option>
+                            <option value="maths">Maths</option>
+                            <option value="social_tudies">Social Studies</option>
+                            <option value="agric_cience">Agric Science</option>
+                            <option value="r.m.e">R.M.E</option>
+                        </select><br>
+                    <label>Semester</label><br>
+                    <select>
+                        <option value="1st">1st</option>
+                        <option value="2nd">2nd</option>
+                        <option value="3rd">3rd</option>            
+                    </select><br>
+                    <label>Class</label><br>
+                    <select>
+                            <option value="1A">1A</option>
+                            <option value="2B">2B</option>
+                            <option value="3C">3C</option>
+                            <option value="3E">3E</option>
+                            <option value="3D">3D</option>
+                    </select><br>
+                    <label>work No.</label><br>
+                    <select>
+                            <option value="HW.1">HW.1</option>
+                            <option value="HW.2">HW.2</option> 
+                            <option value="HW.3">HW.3</option>
+                            <option value="HW.4">HW.4</option>
+                            <option value="HW.5">HW.5</option>
+                            <option value="HW.6">HW.6</option>           
+                    </select><br>
+                    <label>Attach File</label><br>
+                    <input type="file" id="myfile" name="myfile" style="padding-top: 0.7%;"><br>
+                    <div class="modal-footer subbx">
+                        <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe' style="background: black;">
+                        <input type='submit' name='sub' value='Submit' class='cancc' id='wwwwe'>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
