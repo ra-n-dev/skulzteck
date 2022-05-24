@@ -569,6 +569,65 @@
             width: 45%;
         }
         
+        .finalreport {
+            height: 90vh;
+            background: #bfc9ca;
+            border-radius: 20px;
+        }
+        
+        .tab11 {
+            border: orange solid 1px;
+            border-radius: 20px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        
+        .new {
+            background: #f5eef8;
+            border-radius: 5px;
+            width: 80%;
+            margin-left: 10%;
+        }
+        
+        .new .rep {
+            background: white;
+            border-radius: 5px;
+            height: 100vh;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        
+        .contt1 {
+            background: #16686B;
+            height: 16%;
+        }
+        
+        .contt1 .hed {
+            text-align: center;
+            color: white;
+            padding-top: 2%;
+            font-family: serif;
+        }
+        
+        .contt1 .hed2 {
+            text-align: center;
+            color: white;
+            padding-top: 1%;
+        }
+        
+        .contt2 {
+            margin-top: 2%;
+            height: 20vh;
+            margin-left: 3%;
+            border-left: 3px solid black;
+        }
+        
+        .one {
+            margin-left: 2%;
+        }
+        
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -812,6 +871,10 @@
                 background: #bfc9ca;
                 width: 100%;
             }
+            .contt1 {
+                background: #16686B;
+                height: 25%;
+            }
         }
     </style>
 
@@ -871,7 +934,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#" id="aa" onclick="ClickMe()">
+                                <a class="nav-link" href="javascript:display_results()" id="aa">
                                     <span data-feather="file-text" id="aaa"></span> Student Results
                                 </a>
                             </li>
@@ -1245,8 +1308,8 @@
             $("#sidebarMenu").css('display', 'none');
         }
 
-        function display_studentmark() {
-            $('#mk').load("studentmark.html #studentmark");
+        function display_results() {
+            $('#change1').load("results.html #results");
             $("#sidebarMenu").css('display', 'none');
         }
 
