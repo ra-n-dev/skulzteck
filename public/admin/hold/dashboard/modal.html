@@ -1,0 +1,145 @@
+<div class='modal fade adx' id='studentlist' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Students List By Class</h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Class</label><br>
+                    <select>
+                            <option value="1A">1A</option>
+                            <option value="1B">1B</option>
+                            <option value="1C">1C</option>
+                            <option value="2B">2B</option>
+                            <option value="3E">3E</option>
+                        </select><br>
+                    <label>Year</label><br>
+                    <input type="date">
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="onclicklist()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class='modal fade adx' id='studentresult' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Students Results By Class</h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Class</label><br>
+                    <select>
+                            <option value="1A">1A</option>
+                            <option value="1B">1B</option>
+                            <option value="1C">1C</option>
+                            <option value="2B">2B</option>
+                            <option value="3E">3E</option>
+                        </select><br>
+                    <label>Year</label><br>
+                    <input type="date">
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="onclickresult()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class='modal fade adx' id='sortstaff' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Sort Staff </h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Category</label><br>
+                    <select>
+                            <option value="teaching">Teaching</option>
+                            <option value="non-teaching">Non-Teaching</option>
+                        </select><br>
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="onclickresult()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class='modal fade adx' id='expenses' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Sort Expenses </h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Category</label><br>
+                    <select>
+                            <option value="Administration">Administrative</option>
+                            <option value="non-teaching">Non-Administratvie</option>
+                        </select><br>
+                    <div class="row expmodal1">
+
+
+                        <input type="text" id="datepicker1" class="col in1" placeholder="Start Date" style="font-weight: bold;"> to
+
+                        <input type="text" id="datepicker2" class="col in2" placeholder="End date" style="font-weight: bold;">
+
+
+
+                    </div>
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="onclickexpenses()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>

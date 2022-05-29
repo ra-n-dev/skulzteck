@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -17,800 +21,1180 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    
+
 
     <!-- Bootstrap core CSS -->
- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
- <link href="dashboard.css" rel="stylesheet">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet">
 
- 
+
 
 
 
     <style>
-
-     .imma{
-      width:25%;
-      height: 20%;
-      background: white;
-      background: black;
-      }
-
-    
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-       #topp{
-        width:16.7%;
-        background: white;
-        color: black; 
-      }
-
-      .sideb{
-        background: #2C3E50;
-        overflow-y: scroll;
-      }
-      .sideb #aa{
-        color: white;
-      }
-      .sideb #aaa{
-        color: #D35400;
-      }
-      .sideb #aaa1{
-        color: #D35400;
-        margin-left: 9%;
-      }
-      .sideb #aaa hover:{
-        color: white;
-      }
-      .sideb .endside{
-        background:#2C3E50 ;
-      }
-      #userbg{
-
-      }
-
-      #user{
-        color: black;
-      }
-
-     
-
-      .tre{
-        background: red;
-        border-radius: 5px;
-        margin-left: -5%;
-        margin-right: 13%;
-        padding-left: 2%;
-        padding-right: 2%;
-        color: white;
-        margin-left: -8%;
-        opacity: 0.7;
-        font-size: 10px;
-      }
-      .bel{
-       color: #808B96;
-       margin-left: -8%;
-       padding-right: 2%;
-
-      }
-      .prof{
-        width: 2.5em;
-        height: 2em;
-        border-radius: 35px;
-        margin-left: 4%;
-      }
-      .dropp1{
-        margin-left:8%;
-        margin-right: 1%;
-      }
-      
-      .dropp2{
-        color: white;
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 14px;
-      }
-      .dropp2:hover {
-        color: white;
-      }
-      .menuu{
-        width: 90%;
-        margin-top: 2%;
-      } 
- 
-
-      .menuu  a{
-        width: 100%;
-        text-decoration: none;
-        color: black;
-        margin-left: 2%;
-      }
-      .menuu #aaa{
-        padding-right: 2%;
-      }
-      .menuu #wok{
-        margin-left: 2%;
-        margin-top: -9%;
-      }
-      .menuu #wok:hover{
-        background: #F2F3F4;
-      }
-
-      .menuu a:hover {
-        background: #F2F3F4;
-        width: 100%;
-        margin-bottom: 1%;
-      }
-
-      .doit{
-        margin-top: 3%;
-      }
-
-
-      .doit .dropdown .pagess{
-        margin-left: 9%;
-      }
-
-      
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .imma {
+            width: 25%;
+            height: 20%;
+            background: white;
+            background: black;
         }
         
-
-
-      }
-
-      @media(max-width: 768px){
-        #topp{
-        width:30.4%;
-        background: transparent;
-        color: black;
-        border: 0.1px solid white; 
-      }
-
-
-      .dropp1{
-        margin-left:3%;
-        margin-right: 1%;
-      }
-      }
-
-
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        #topp {
+            width: 16.7%;
+            background: white;
+            color: black;
+        }
+        
+        .sideb {
+            background: #2C3E50;
+            overflow-y: scroll;
+        }
+        
+        .sideb #aa {
+            color: white;
+        }
+        
+        .sideb #aaa {
+            color: #D35400;
+        }
+        
+        .sideb #aaa1 {
+            color: #D35400;
+            margin-left: 9%;
+        }
+        
+        .sideb #aaa hover: {
+            color: white;
+        }
+        
+        .sideb .endside {
+            background: #2C3E50;
+        }
+        
+        #userbg {}
+        
+        #user {
+            color: black;
+        }
+        
+        .tre {
+            background: red;
+            border-radius: 5px;
+            margin-left: -5%;
+            margin-right: 13%;
+            padding-left: 2%;
+            padding-right: 2%;
+            color: white;
+            margin-left: -8%;
+            opacity: 0.7;
+            font-size: 10px;
+        }
+        
+        .bel {
+            color: #808B96;
+            margin-left: -8%;
+            padding-right: 2%;
+        }
+        
+        .prof {
+            width: 2.5em;
+            height: 2em;
+            border-radius: 35px;
+            margin-left: 4%;
+        }
+        
+        .dropp1 {
+            margin-left: 8%;
+            margin-right: 1%;
+        }
+        
+        .dropp2 {
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .dropp2:hover {
+            color: white;
+        }
+        
+        .menuu {
+            width: 90%;
+            margin-top: 2%;
+        }
+        
+        .menuu a {
+            width: 100%;
+            text-decoration: none;
+            color: black;
+            margin-left: 2%;
+        }
+        
+        .menuu #aaa {
+            padding-right: 2%;
+        }
+        
+        .menuu #wok {
+            margin-left: 2%;
+            margin-top: -9%;
+        }
+        
+        .menuu #wok:hover {
+            background: #F2F3F4;
+        }
+        
+        .menuu a:hover {
+            background: #F2F3F4;
+            width: 100%;
+            margin-bottom: 1%;
+        }
+        
+        .doit {
+            margin-top: 3%;
+        }
+        
+        .doit .dropdown .pagess {
+            margin-left: 9%;
+        }
+        
+        .bett {
+            padding-right: 2%;
+        }
+        
+        .bet {
+            background: #f35017;
+            border-radius: 20px;
+            padding-right: 7px;
+            padding-left: 7px;
+            padding-bottom: 3px;
+            color: #f9c953;
+            margin-left: 24px;
+        }
+        
+        .new-classs {
+            margin-top: 1%;
+            text-decoration: none;
+            margin-right: 2%;
+            background: #95a5a6;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px;
+            padding-right: 2%;
+            padding-left: 2%;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            border: 2px solid orange;
+        }
+        
+        .tees {
+            background: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-radius: 20px;
+            color: black;
+            margin-left: 2%;
+            border: 1px solid #e67e22;
+        }
+        
+        .tees h5 {
+            font-weight: bold;
+        }
+        
+        .adx {
+            margin-top: 11%;
+        }
+        
+        .adx form input {
+            width: 100%;
+            height: 2.5em;
+            border-radius: 5px;
+            border: 0.3px solid black;
+            padding-left: 2%;
+            background: transparent;
+        }
+        
+        .adx form select {
+            width: 100%;
+            height: 2.5em;
+            border-radius: 5px;
+            border: 0.3px solid black;
+            padding-left: 2%;
+            background: transparent;
+        }
+        
+        #www {
+            width: 24%;
+            height: 2em;
+            padding-left: 5%;
+            padding-top: 1%;
+        }
+        
+        #wwwwe {
+            width: 28%;
+            height: 2em;
+        }
+        
+        .subbx {
+            width: 73%;
+            border: transparent;
+        }
+        
+        .subb .cancc {
+            opacity: 2;
+            background: green;
+            color: white;
+            border-radius: 5px;
+            border: 0.3px solid green;
+            text-decoration: none;
+        }
+        
+        .subbx .canc {
+            background: red;
+            color: white;
+            border-radius: 5px;
+            border: 0.3px solid red;
+            text-decoration: none;
+        }
+        
+        .subbx .cancc {
+            opacity: 2;
+            background: green;
+            color: white;
+            border-radius: 5px;
+            border: 0.3px solid green;
+            text-decoration: none;
+        }
+        
+        .pro {
+            opacity: 2;
+            background: black;
+            border-radius: 5px;
+            color: white;
+            border: 0.3px solid black;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        .card1 {
+            border-left: 5px solid #102473;
+        }
+        
+        .card2 {
+            border-left: 5px solid orange;
+        }
+        
+        .card3 {
+            border-left: 5px solid #ccb9a1;
+        }
+        
+        .card4 {
+            border-left: 5px solid #94fae8;
+        }
+        
+        .card11 {
+            border-left: 5px solid #2e86c1;
+        }
+        
+        .card12 {
+            border-left: 5px solid #27ae60;
+        }
+        
+        .card13 {
+            border-left: 5px solid #7adff8;
+        }
+        
+        .card14 {
+            border-left: 5px solid #cb4335;
+        }
+        
+        #chart_div {
+            border: 1px solid #cb4335;
+        }
+        
+        .news {
+            border: 1px solid black;
+            text-decoration: none;
+            border-radius: 5px;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 0.1%;
+            padding-bottom: 0.1%;
+            text-align: center;
+            color: black;
+        }
+        
+        .expmodal1 {
+            margin-top: 4%;
+            width: 100%;
+            margin-left: 0.2%;
+        }
+        
+        .in1 {
+            margin-right: 0.5%;
+        }
+        
+        .in2 {
+            margin-left: 0.5%;
+        }
+        
+        .expmodal2 input {
+            width: 110%;
+        }
+        
+        .notiz {
+            width: 28%;
+            text-align: center;
+            background: white;
+            padding-left: 0%;
+            padding-right: 0%;
+            border-radius: 20px;
+            color: black;
+            margin-left: 2%;
+            border: 1px solid #e67e22;
+        }
+        
+        .fn1 {
+            background: white;
+            height: 30em;
+            width: 45%;
+        }
+        
+        .fnn {
+            background: white;
+            width: 100%;
+        }
+        
+        .fn2 {
+            background: white;
+            width: 55%;
+            height: 22em;
+        }
+        
+        .tab1 {
+            margin-left: 1%;
+            overflow-y: scroll;
+        }
+        
+        textarea {
+            border: 3px solid #2c3e50;
+        }
+        
+        .tab1 table {
+            width: 99%;
+            margin-left: 1%;
+        }
+        
+        .tab1 ul {
+            list-style-type: none;
+        }
+        
+        .nott {
+            height: 100%;
+            overflow-y: scroll;
+        }
+        
+        .nott ul {
+            list-style-type: none;
+            margin-left: -6%;
+        }
+        
+        .nott ul li {
+            border-bottom: 1px solid black;
+            margin-bottom: 4%;
+            padding-bottom: 4%;
+        }
+        
+        .nott .d1 {
+            background: #1a5276;
+            text-decoration: none;
+            border-radius: 20px;
+            padding-top: 1px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            color: white;
+        }
+        
+        .tee {
+            background: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-radius: 5px;
+            color: black;
+            margin-left: 2%;
+            border: 1px solid white;
+        }
+        
+        .fnn2 h5 {
+            font-weight: bold;
+        }
+        
+        .fnn2 {
+            background: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-radius: 5px;
+            color: black;
+            margin-left: 2%;
+            border: 1px solid white;
+        }
+        
+        .tee h5 {
+            font-weight: bold;
+        }
+        
+        .send {
+            margin-top: 2%;
+            background: #5dc12e;
+            border: 1px solid #5dc12e;
+            border-radius: 5px;
+            width: 18%;
+            color: white;
+        }
+        
+        .sends {
+            margin-top: 2%;
+            background: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            width: 18%;
+            color: white;
+        }
+        
+        .del {
+            color: red;
+            margin-left: 5%;
+        }
+        
+        .app {
+            color: #5dc12e;
+        }
+        
+        .content {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            border-radius: 5px;
+            /*to hide popup initially*/
+        }
+        
+        .contents {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            border-radius: 5px;
+            /*to hide popup initially*/
+        }
+        
+        .contentx {
+            position: absolute;
+            top: 4%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 150px;
+            text-align: center;
+            background-color: #f2f3f4;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            border-radius: 5px;
+            /*to hide popup initially*/
+        }
+        
+        .close-btn {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            padding-left: 5px;
+            padding-right: 5px;
+            cursor: pointer;
+        }
+        
+        .bgg {
+            width: 10%;
+            background: #5dc12e;
+            border-radius: 20px;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        @media(max-width: 768px) {
+            #topp {
+                width: 30.4%;
+                background: transparent;
+                color: black;
+                border: 0.1px solid white;
+            }
+            .dropp1 {
+                margin-left: 3%;
+                margin-right: 1%;
+            }
+        }
+        
+        @media(max-width:400px) {
+            .studdlist {
+                overflow-x: scroll;
+            }
+        }
     </style>
 
-    
+
     <!-- Custom styles for this template -->
-   
-  </head>
-  <body>
-    
-<header class="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-0 shadow" >
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 naa" href="#" id="topp"><span ><img src="../../../img/skuls4.png"class="imma"></span><span style="color:   #d35400  ;">SKULS</span><span style="color:  #1a5276 ;">TECH</span></a>
-  <button style="background: #707B7C;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" id="menu" ></span>
-  </button>
-  <span class="form-control form-control-dark w-100" type="text"  aria-label="Search"  ></span>
-  <div class="navbar-nav endside" id="userbg">
-    <div class="nav-item text-nowrap">
-       
-       <ul style="list-style-type:none">
-        <li class="nav-item dropdown no-arrow">
-      <a class="nav-link px-3" href="#" id="user">
 
-        <i class="fas fa-bell fa-fw bel"></i>
-        <span class="tre">3+</span>
-        
-        <span class="mr-2 d-none d-lg-inline text-gray-600 small">Paul Tengey</span>
-        <img class="img-profile rounded-circle" src="../img/undraw_profile.svg" style="height: 2em; width:2em">
+</head>
 
+<body>
 
-       </a> 
+    <header class="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 naa" href="#" id="topp"><span ><img src="../../../img/skuls4.png"class="imma"></span><span style="color:   #d35400  ;">SKULS</span><span style="color:  #1a5276 ;">TECH</span></a>
+        <div id="big">
+            <button style="background: #707B7C;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" onclick="onMenu">
+              <span class="navbar-toggler-icon" id="menu" ></span>
+            </button>
+        </div>
+        <span class="form-control form-control-dark w-100" type="text" aria-label="Search"></span>
+        <div class="navbar-nav endside" id="userbg">
+            <div class="nav-item text-nowrap">
 
-     </li>
-    
-    </ul>
-    </div>
-  </div>
-</header>
+                <ul style="list-style-type:none">
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link px-3" href="#" id="user">
 
-<div class="container-fluid">
-  <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse sideb">
-      <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
-          <pre></pre>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html" id="aa">
-              <span data-feather="home" id="aaa" ></span>
-              Dashboard
-            </a>
-          </li>
+                            <i class="fas fa-bell fa-fw bel"></i>
+                            <span class="tre">3+</span>
 
-    
-         <li class="nav-item doit" >
-               
-                  <div class="dropdown" style="width:100%; background: transparent;">
-                    <i data-feather="folder" id="aaa1" class="pagess"></i>
-                   <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Pages
-                   <span class="caret"></span></a>                
-                    
-                   <ul class="dropdown-menu menuu" >
-                    <center><span  style="margin-bottom:2%;color:  #99a3a4 ;">All Pages</span><br></center>
-                    <a href="service.php" ><li id="wok" ><i data-feather="users" id="aaa"></i>students list</li></a>
-                    <a href="service.php" ><li id="wok" ><i data-feather="users" id="aaa"></i>students results</li></a>
-                    <a href="staffs.php" ><li id="wok" ><i data-feather="user" id="aaa"></i>staffs</li></a>
-
-                    <a href="expenses.php" ><li id="wok" ><i data-feather="file" id="aaa"></i>expenses</li></a>
-                    
-
-                    <a href="patients.php" ><li id="wok" ><i data-feather="users" id="aaa"></i>notice board</li></a>
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Paul Tengey</span>
+                            <img class="img-profile rounded-circle" src="../img/undraw_profile.svg" style="height: 2em; width:2em">
 
 
-                    <a href="requested_expenses.php" ><li id="wok" ><i data-feather="shopping-cart" id="aaa"></i>requested expenses</li></a>
+                        </a>
 
-                    <a href="expenses_statement.php" ><li id="wok" ><i data-feather="shopping-cart" id="aaa"></i>assests</li></a>
-                   
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse sideb">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <pre></pre>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" id="aa">
+                                <span data-feather="home" id="aaa"></span> Dashboard <span class="bet">Beta</span>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item doit">
+
+                            <div class="dropdown" style="width:100%; background: transparent;">
+                                <i data-feather="file-text" id="aaa1" class="pagess"></i>
+                                <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Pages
+                                <span class="caret"></span></a>
+
+                                <ul class="dropdown-menu menuu">
+                                    <center><span style="margin-bottom:2%;color:  #99a3a4 ;">All Pages</span><br></center>
+                                    <a href="#" data-toggle="modal" data-target="#studentlist">
+                                        <li id="wok"><i data-feather="users" id="aaa"></i>students list</li>
+                                    </a>
+                                    <a href="#" data-toggle="modal" data-target="#studentresult">
+                                        <li id="wok"><i data-feather="users" id="aaa"></i>students results</li>
+                                    </a>
+                                    <a href="javascript:display_stafflist()">
+                                        <li id="wok"><i data-feather="user" id="aaa"></i>staffs</li>
+                                    </a>
+
+                                    <a href="#" data-toggle="modal" data-target="#expenses">
+                                        <li id="wok"><i data-feather="file" id="aaa"></i>expenses</li>
+                                    </a>
+
+
+                                    <a href="javascript:display_noticeboard()">
+                                        <li id="wok"><i data-feather="users" id="aaa"></i>notice board</li>
+                                    </a>
+
+
+                                    <a href="javascript:display_reqexpense()">
+                                        <li id="wok"><i data-feather="shopping-cart" id="aaa"></i>requested expenses</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item doit">
+
+                            <div class="dropdown" style="width:100%; background: transparent;">
+                                <i data-feather="file-text" id="aaa1" class="pagess"></i>
+                                <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Salary
+                   <span class="caret"></span></a>
+
+                                <ul class="dropdown-menu menuu">
+
+                                    <center><span style="margin-bottom:2%;color:  #99a3a4 ;">Salaries To Pay</span><br></center>
+
+                                    <a href="income_statement.php">
+                                        <li id="wok"><i data-feather="shopping-cart" id="aaa"></i>salaries</li>
+                                    </a>
+
+                                    <a href="expenses_statement.php">
+                                        <li id="wok"><i data-feather="file" id="aaa"></i>debts</li>
+                                    </a>
+
+
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+
+                        <li class="nav-item doit">
+
+                            <div class="dropdown" style="width:100%; background: transparent;">
+                                <i data-feather="copy" id="aaa1" class="pagess"></i>
+                                <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Bills
+                   <span class="caret"></span></a>
+
+                                <ul class="dropdown-menu menuu">
+                                    <center><span style="margin-bottom:2%;color:  #99a3a4 ;">Bills To Pay</span><br></center>
+
+
+                                    <a href="income_statement.php">
+                                        <li id="wok"><i data-feather="shopping-cart" id="aaa"></i>rent</li>
+                                    </a>
+
+                                    <a href="expenses_statement.php">
+                                        <li id="wok"><i data-feather="file" id="aaa"></i>light</li>
+                                    </a>
+
+
+                                    <a href="income_statement.php">
+                                        <li id="wok"><i data-feather="users" id="aaa"></i>water</li>
+                                    </a>
+
+
+                                    <a href="expenses_statement.php">
+                                        <li id="wok"><i data-feather="shopping-cart" id="aaa"></i>dept</li>
+                                    </a>
+
+
+
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item doit">
+
+                            <div class="dropdown" style="width:100%; background: transparent;">
+                                <i data-feather="bar-chart-2" id="aaa1" class="pagess"></i>
+                                <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Reports
+                   <span class="caret"></span></a>
+
+                                <ul class="dropdown-menu menuu">
+
+                                    <center><span style="margin-bottom:2%;color:  #99a3a4 ;">Reports To Generate</span><br></center>
+                                    <a href="income_statement.php">
+                                        <li id="wok"><i data-feather="shopping-cart" id="aaa"></i>income</li>
+                                    </a>
+
+                                    <a href="expenses_statement.php">
+                                        <li id="wok"><i data-feather="file" id="aaa"></i>expenses</li>
+                                    </a>
+
+
+                                    <a href="income_expenditure.php">
+                                        <li id="wok"><i data-feather="users" id="aaa"></i>income & expenses</li>
+                                    </a>
+
+
+                                    <a href="expenses_statement.php">
+                                        <li id="wok"><i data-feather="shopping-cart" id="aaa"></i>staff</li>
+                                    </a>
+
+                                    <a href="income_statement.php">
+                                        <li id="wok"><i data-feather="user" id="aaa"></i>assets</li>
+                                    </a>
+
+
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="aa">
+                                <span data-feather="layers" id="aaa"></span> Integrations
+                            </a>
+                        </li>
                     </ul>
-                 </div>
-            </li>
 
-            <li class="nav-item doit" >
-               
-                  <div class="dropdown" style="width:100%; background: transparent;">
-                    <i data-feather="file" id="aaa1" class="pagess"></i>
-                   <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Salary
-                   <span class="caret"></span></a>                
-                    
-                   <ul class="dropdown-menu menuu" >
-
-                    <center><span  style="margin-bottom:2%;color:  #99a3a4 ;">Salaries To Pay</span><br></center>
-
-                    <a href="income_statement.php" ><li id="wok" ><i data-feather="shopping-cart" id="aaa"></i>salaries</li></a>
-
-                    <a href="expenses_statement.php" ><li id="wok" ><i data-feather="file" id="aaa"></i>debts</li></a>
-                
-                   
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span style="color:gold">Saved reports</span>
+                        <a class="link-secondary" href="#" aria-label="Add a new report" id="aa">
+                            <span data-feather="plus-circle" id="aaa"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Current month
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Last quarter
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Social engagement
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Year-end sale
+                            </a>
+                        </li>
                     </ul>
-                 </div>
-            </li>
+                </div>
+            </nav>
 
-
-
-
-            <li class="nav-item doit" >
-               
-                  <div class="dropdown" style="width:100%; background: transparent;">
-                    <i data-feather="copy" id="aaa1" class="pagess"></i>
-                   <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Bills
-                   <span class="caret"></span></a>                
-                    
-                   <ul class="dropdown-menu menuu" >
-                    <center><span  style="margin-bottom:2%;color:  #99a3a4 ;">Bills To Pay</span><br></center> 
-
-
-                    <a href="income_statement.php" ><li id="wok" ><i data-feather="shopping-cart" id="aaa"></i>rent</li></a>
-
-                    <a href="expenses_statement.php" ><li id="wok" ><i data-feather="file" id="aaa"></i>light</li></a>
-                    
-
-                    <a href="income_statement.php" ><li id="wok" ><i data-feather="users" id="aaa"></i>water</li></a>
-
-
-                    <a href="expenses_statement.php" ><li id="wok" ><i data-feather="shopping-cart" id="aaa"></i>dept</li></a>
-
-                
-                   
-                    </ul>
-                 </div>
-            </li>
-
-
-           <li class="nav-item doit" >
-               
-                  <div class="dropdown" style="width:100%; background: transparent;">
-                    <i data-feather="bar-chart-2" id="aaa1" class="pagess"></i>
-                   <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Reports
-                   <span class="caret"></span></a>                
-                    
-                   <ul class="dropdown-menu menuu" >
-
-                   <center><span  style="margin-bottom:2%;color:  #99a3a4 ;">Reports To Generate</span><br></center> 
-                    <a href="income_statement.php" ><li id="wok" ><i data-feather="shopping-cart" id="aaa"></i>income</li></a>
-
-                    <a href="expenses_statement.php" ><li id="wok" ><i data-feather="file" id="aaa"></i>expenses</li></a>
-                    
-
-                    <a href="income_expenditure.php" ><li id="wok" ><i data-feather="users" id="aaa"></i>income & expenses</li></a>
-
-
-                    <a href="expenses_statement.php" ><li id="wok" ><i data-feather="shopping-cart" id="aaa"></i>staff</li></a>
-
-                    <a href="income_statement.php" ><li id="wok" ><i data-feather="user" id="aaa"></i>assets</li></a>
-
-                   
-                    </ul>
-                 </div>
-            </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="aa">
-              <span data-feather="layers" id="aaa"></span>
-              Integrations
-            </a>
-          </li>
-        </ul>
-
-        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-          <span style="color:gold">Saved reports</span>
-          <a class="link-secondary" href="#" aria-label="Add a new report" id="aa">
-            <span data-feather="plus-circle" id="aaa"></span>
-          </a>
-        </h6>
-        <ul class="nav flex-column mb-2">
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="aa">
-              <span data-feather="file-text" id="aaa"></span>
-              Current month
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="aa">
-              <span data-feather="file-text" id="aaa"></span>
-              Last quarter
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="aa">
-              <span data-feather="file-text" id="aaa"></span>
-              Social engagement
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="aa">
-              <span data-feather="file-text" id="aaa"></span>
-              Year-end sale
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Admin Dashboard</h1>
-        <div class="btn-toolbar mb-2 mb-md-0">
-          <div class="btn-group me-2">
-            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
-          </div>
-          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" id="admin1">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h5 class="tees " style="color: black ">Home</h5>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
             <span data-feather="calendar"></span>
             This week
           </button>
-        </div>
-      </div>
-
-      <!-- Content Row1 -->
-                    <div class="row" >
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Earnings (Monthly)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id=''>100.00</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Earnings (Annual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="">3000.00</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                Monthly Debt</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">50.00</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Total Debt</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">300.00</div>
-                                        </div>
-                                        <div class="col-auto">
-                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
-                     <!-- Content Row1 -->
-
-                    <!-- Content Row2 -->
-                    <div class="row">
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1 text-center">
-                                                Total Staffs</div>
-                                            <div class="h5 mb-0 text-center font-weight-bold  sta" id="">20</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs text-center font-weight-bold text-success text-uppercase mb-1">
-                                                Total Students</div>
-                                            <div class="h5 mb-0 text-center font-weight-bold text-gray-800">200</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pending Requests Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-warning shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pending Expenses Request</div>
-                                            <div class="h5 mb-0 text-center font-weight-bold text-gray-800" id="">8</div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    
-                    <!-- cont row 2 -->
-
-                    
-
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area" style="height: 22.5em;">
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pie Chart -->
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-pie pt-4 pb-2" style="height: 19.5em;">
-                                        <canvas id="myPieChart"></canvas>
-                                    </div>
-                                    <div class="mt-4 text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-primary"></i> Direct
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Social
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-info"></i> Referral
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <!-- Dashboard Page Content Ends Here -->
-
-                    <!-- Content Row -->
-                    
                 </div>
-                <!-- /.container-fluid -->
 
-            </div>
-            <!-- End of Main Content -->
+                <!-- Content Row1 -->
+                <div class="row">
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4 ">
+                        <div class="card border-left-primary shadow h-100 py-2 card1">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1" style="color:#102473">
+                                            Earnings (Monthly)</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800" id=''>100.00</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i style="font-size: 34px; color:#102473;">&#8373</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-success shadow h-100 py-2 card2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                            Earnings (Annual)</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="">3000.00</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i style="font-size: 34px; color:#f67810;">&#8373</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4 ">
+                        <div class="card border-left-info shadow h-100 py-2 card3">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1" style="color:#546729 ">
+                                            Monthly Debt</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">50.00</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i style="font-size: 34px; color:#7d3c98;">&#8373</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pending Requests Card Example -->
+
+                    <div class="col-xl-3 col-md-6 mb-4 ">
+                        <div class="card border-left-warning shadow h-100 py-2 card4">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                            <span style="color: #6c3483 ">Total Debt</span>
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">300.00</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i style="font-size: 34px; color:#f67810;">&#8373</i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
 
-      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+                </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
+                <!-- Content Row1 -->
+
+                <!-- Content Row2 -->
+                <div class="row">
+
+                    <!-- Earnings (Monthly) Card Example -->
+
+                    <div class="col-xl-3 col-md-6 mb-4 ">
+                        <div class="card border-left-primary shadow h-100 py-2 card11">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1" style="color:  #2e86c1 ;">
+                                            Total Staff</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800" id=''>20</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-chalkboard-teacher fa-3x" style="color:  #2e86c1 ;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2 card12">
+                            <div class="card-body">
+                                <div class="row no-gutters ">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                            Total Students</div>
+                                        <div class="h5 mb-0  font-weight-bold text-gray-800">200</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class="fas fa-user-graduate fa-3x text-gray-300" style="color: #27ae60 ;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 py-2 card13">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                        </div>
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="progress progress-sm mr-2">
+                                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pending Requests Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 py-2 card14">
+                            <div class="card-body">
+                                <div class="row no-gutters ">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                            <span style="color:  #cb4335  ">Expenses Request</span></div>
+                                        <div class="h5 mb-0  font-weight-bold text-gray-800" id="">8</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class=" 	fas fa-cart-arrow-down fa-3x" style="color: #cb4335 ;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- cont row 2 -->
 
 
 
+                <div class="row">
 
-<script type="text/javascript">
-        
+                    <!-- Area Chart -->
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-        // Set new default font family and font color to mimic Bootstrap's default styling
-Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-Chart.defaults.global.defaultFontColor = '#858796';
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">Dropdown Header:</div>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body" id="chart_div" style="height: 24.5em;">
+                            </div>
+                        </div>
+                    </div>
 
-function number_format(number, decimals, dec_point, thousands_sep) {
-  // *     example: number_format(1234.56, 2, ',', ' ');
-  // *     return: '1 234,56'
-  number = (number + '').replace(',', '').replace(' ', '');
-  var n = !isFinite(+number) ? 0 : +number,
-    prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
-    sep = (typeof thousands_sep === 'undefined') ? ',' : thousands_sep,
-    dec = (typeof dec_point === 'undefined') ? '.' : dec_point,
-    s = '',
-    toFixedFix = function(n, prec) {
-      var k = Math.pow(10, prec);
-      return '' + Math.round(n * k) / k;
-    };
-  // Fix for IE parseFloat(0.55).toFixed(0) = 0;
-  s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
-  if (s[0].length > 3) {
-    s[0] = s[0].replace(/\B(?=(?:\d{3})+(?!\d))/g, sep);
-  }
-  if ((s[1] || '').length < prec) {
-    s[1] = s[1] || '';
-    s[1] += new Array(prec - s[1].length + 1).join('0');
-  }
-  return s.join(dec);
-}
+                    <!-- Pie Chart -->
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-// Area Chart Example
-var ctx = document.getElementById("myAreaChart");
-var myLineChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    //labels:document.getElementById('daat').innerText.split(","),
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">Dropdown Header:</div>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="chart-pie pt-4 pb-2" style="height: 19.5em;">
+                                    <canvas id="myPieChart"></canvas>
+                                </div>
+                                <div class="mt-4 text-center small">
+                                    <span class="mr-2">
+                                            <i class="fas fa-circle text-primary"></i> School Fees
+                                        </span>
+                                    <span class="mr-2">
+                                            <i class="fas fa-circle text-success"></i> P.T.A
+                                        </span>
+                                    <span class="mr-2">
+                                            <i class="fas fa-circle text-info"></i> Donation
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
 
-    datasets: [{
-      label: "Earnings",
-      lineTension: 0.3,
-      backgroundColor: "rgba(78, 115, 223, 0.05)",
-      borderColor: "rgba(78, 115, 223, 1)",
-      pointRadius: 3,
-      pointBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointBorderColor: "rgba(78, 115, 223, 1)",
-      pointHoverRadius: 3,
-      pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointHoverBorderColor: "rgba(78, 115, 223, 1)",
-      pointHitRadius: 10,
-      pointBorderWidth: 2,
-      data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
-      
-       
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    layout: {
-      padding: {
-        left: 10,
-        right: 25,
-        top: 25,
-        bottom: 0
-      }
-    },
-    scales: {
-      xAxes: [{
-        time: {
-          unit: 'date'
-        },
-        gridLines: {
-          display: false,
-          drawBorder: false
-        },
-        ticks: {
-          maxTicksLimit: 7
+        <!-- Dashboard Page Content Ends Here -->
+
+        <!-- Content Row -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+    </div>
+    <div id="modal"></div>
+    <!-- End of Main Content -->
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+    <script>
+        google.charts.load('current', {
+            packages: ['corechart', 'line']
+        });
+        google.charts.setOnLoadCallback(drawCurveTypes);
+
+        function drawCurveTypes() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'X');
+            data.addColumn('number', 'Profit');
+            data.addColumn('number', 'Loss');
+
+            data.addRows([
+                [0, 0, 0],
+                [1, 10, 5],
+                [2, 23, 15],
+                [3, 17, 9],
+                [4, 18, 10],
+                [5, 9, 5],
+                [6, 11, 3],
+                [7, 27, 19],
+                [8, 33, 25],
+                [9, 40, 32],
+                [10, 32, 24],
+                [11, 35, 27],
+                [12, 30, 22],
+                [13, 40, 32],
+                [14, 42, 34],
+                [15, 47, 39],
+                [16, 44, 36],
+                [17, 48, 40],
+                [18, 52, 44],
+                [19, 54, 46],
+                [20, 42, 34],
+                [21, 55, 47],
+                [22, 56, 48],
+                [23, 57, 49],
+                [24, 60, 52],
+                [25, 50, 42],
+                [26, 52, 44],
+                [27, 51, 43],
+                [28, 49, 41],
+                [29, 53, 45],
+                [30, 55, 47],
+                [31, 60, 52],
+                [32, 61, 53],
+                [33, 59, 51],
+                [34, 62, 54],
+                [35, 65, 57],
+                [36, 62, 54],
+                [37, 58, 50],
+                [38, 55, 47],
+                [39, 61, 53],
+                [40, 64, 56],
+                [41, 65, 57],
+                [42, 63, 55],
+                [43, 66, 58],
+                [44, 67, 59],
+                [45, 69, 61],
+                [46, 69, 61],
+                [47, 70, 62],
+                [48, 72, 64],
+                [49, 68, 60],
+                [50, 66, 58],
+                [51, 65, 57],
+                [52, 67, 59],
+                [53, 70, 62],
+                [54, 71, 63],
+                [55, 72, 64],
+                [56, 73, 65],
+                [57, 75, 67],
+                [58, 70, 62],
+                [59, 68, 60],
+                [60, 64, 56],
+                [61, 60, 52],
+                [62, 65, 57],
+                [63, 67, 59],
+                [64, 68, 60],
+                [65, 69, 61],
+                [66, 70, 62],
+                [67, 72, 64],
+                [68, 75, 67],
+                [69, 80, 72],
+                [70, 84, 77]
+            ]);
+
+            var options = {
+                hAxis: {
+                    title: 'Month'
+                },
+                vAxis: {
+                    title: 'Amount'
+                },
+                backgroundColor: '#f1f8e9',
+                series: {
+                    1: {
+                        curveType: 'function'
+                    }
+                }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
         }
-      }],
-      yAxes: [{
-        ticks: {
-          maxTicksLimit: 5,
-          padding: 10,
-          // Include a dollar sign in the ticks
-          callback: function(value, index, values) {
-            return 'Ghc' + number_format(value);
-          }
-        },
-        gridLines: {
-          color: "rgb(234, 236, 244)",
-          zeroLineColor: "rgb(234, 236, 244)",
-          drawBorder: false,
-          borderDash: [2],
-          zeroLineBorderDash: [2]
-        }
-      }],
-    },
-    legend: {
-      display: false
-    },
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      titleMarginBottom: 10,
-      titleFontColor: '#6e707e',
-      titleFontSize: 14,
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      intersect: false,
-      mode: 'index',
-      caretPadding: 10,
-      callbacks: {
-        label: function(tooltipItem, chart) {
-          var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': Ghc' + number_format(tooltipItem.yLabel);
-        }
-      }
-    }
-  }
-});
-
     </script>
 
-   <script type="text/javascript">
-    setInterval((
-        ()=>{
-
-             $.post("test.php",{sum:1},(res,stcode)=>{
-                let data=res.split(",")
-             $("#sum").html("GH&cent"+data[0]);
-             $("#yearsum").html("GH&cent"+data[1]);
-             $("#staff").html(data[2]);
-             $("#ex_id").html(data[3]);
-             
-
-             })
- 
-        }
-
-        ),2000)
-    
-       
-   </script>
 
 
-
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -828,8 +1212,144 @@ var myLineChart = new Chart(ctx, {
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
-    
 
 
-  </body>
+
+
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#datepicker1").datepicker();
+            $("#datepicker2").datepicker();
+        });
+    </script>
+
+
+
+    <script>
+        $("#modal").load("modal.html");
+
+        function onclicklist() {
+            $('#admin1').load("studlist.html #studlist");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function onclickresult() {
+            $('#admin1').load("student_result.html #studentresult");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+
+
+        function display_stafflist() {
+            $('#admin1').load("staff.html #stafflist");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function onclickexpenses() {
+            $('#admin1').load("expenses.html #expenseslist");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_noticeboard() {
+            $('#admin1').load("noticeboard.html #noticeboard");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_reqexpense() {
+            $('#admin1').load("req_expenses.html #reqexpense");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_exams() {
+            $('#change1').load("exams.html #exams");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_quiz() {
+            $('#change1').load("quiz.html #quiz");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_final() {
+            $('#change1').load("final_results.html #finalresult");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_finalclassdetails() {
+            $('#finalresult').load("final_classdetails.html #finalclassdetails");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_exams_papers() {
+            $('#exams').load("exams_papers.html #exams_papers");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_quiz_papers() {
+            $('#quiz').load("quiz_papers.html #quiz_papers");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_exams_classdetails() {
+            $('#exams').load("exams_classdetails.html #examsclassdetails");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_quiz_classdetails() {
+            $('#quiz').load("quiz_classdetails.html #quizclassdetails");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+
+
+        $(document).ready(function() {
+
+            $("#sidebarMenu").css('display', 'none');
+
+            $("#big").click(function() {
+                if ($("#sidebarMenu").css('display') != 'block') {
+                    $("#sidebarMenu").css('display', 'block');
+                } else if ($("#sidebarMenu").css('display') != 'none') {
+                    $("#sidebarMenu").css('display', 'none');
+                } else {}
+            });
+        });
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        // Function to show and hide the popup
+        function togglePopup() {
+            $(".content").toggle();
+        }
+
+        function toggleReject() {
+            $(".contents").toggle();
+        }
+
+        function toggleDelete() {
+            $(".contentx").toggle();
+        }
+    </script>
+
+
+
+
+    <script>
+        w3IncludeHTML();
+    </script>
+
+
+
+
+
+
+
+</body>
+
+
 </html>
