@@ -1,0 +1,542 @@
+<div class='modal fade adx' id='studentlist' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Students List By Class</h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Class</label><br>
+                    <select>
+                            <option value="1A">1A</option>
+                            <option value="1B">1B</option>
+                            <option value="1C">1C</option>
+                            <option value="2B">2B</option>
+                            <option value="3E">3E</option>
+                        </select><br>
+                    <label>Year</label><br>
+                    <input type="date">
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="onclicklist()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class='modal fade adx' id='studentresult' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Students Results By Class</h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Class</label><br>
+                    <select>
+                            <option value="1A">1A</option>
+                            <option value="1B">1B</option>
+                            <option value="1C">1C</option>
+                            <option value="2B">2B</option>
+                            <option value="3E">3E</option>
+                        </select><br>
+                    <label>Year</label><br>
+                    <input type="date">
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="onclickresult()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class='modal fade adx' id='sortstaff' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Sort Staff </h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Category</label><br>
+                    <select>
+                            <option value="teaching">Teaching</option>
+                            <option value="non-teaching">Non-Teaching</option>
+                        </select><br>
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="onclickresult()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class='modal fade adx' id='expenses' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Sort Expenses </h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Category</label><br>
+                    <select>
+                            <option value="Administration">Administrative</option>
+                            <option value="non-teaching">Non-Administratvie</option>
+                        </select><br>
+                    <div class="row expmodal1">
+
+
+                        <input type="text" id="datepicker1" class="col in1" placeholder="Start Date" style="font-weight: bold;"> to
+
+                        <input type="text" id="datepicker2" class="col in2" placeholder="End date" style="font-weight: bold;">
+
+
+
+                    </div>
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="onclickexpenses()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class='modal fade adx' id='moresales' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Choose Sales Category</h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Sales Type</label><br>
+                    <select name="state_select" class="state_select">
+                            <option value="Fees">Fees</option>
+                            <option value="Others">Others</option>
+                        </select><br>
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="display_sales()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal bill shadow" id='bills' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+
+    <button type='button' data-dismiss='modal' aria-label='Close' class="close-btn" style="border:1px solid transparent;">
+        ×
+    </button>
+
+
+    <h3>Billing Form</h3>
+    <div>
+        <form>
+            <div class="row payf">
+                <div class="col">
+                    <span>School Name: <a style="font-weight:bold;">Christian Village Prep.</a></span><br>
+                    <span>Contact:<a style="font-weight:bold;"> +233507544998</a></span>
+                </div>
+                <div class="col">
+                    <span>Email: <a style="font-weight:bold;">chris20@gmail.com</a></span><br>
+                    <span>Bank Account:<a style="font-weight:bold;">  900123000455959</a></span>
+                </div>
+
+            </div>
+            <label>Semester</label><br>
+            <select name="semester">
+                <option value="cash">sem1</option>
+                <option value="momo">sem2</option>
+                <option value="bank">sem3</option>
+            </select><br>
+            <label>Level</label><br>
+            <select name="level">
+                <option value="K.G">K.G</option>
+                <option value="Nursery">Nursery</option>
+                <option value="Primary">Primary</option>
+                <option value="JHS">JHS</option>
+            </select><br>
+            <pre></pre>
+
+            <div class="f1">
+                <div class="input-field">
+                    <table class="tablehead" id="table_field" style="background:#D7DBDD;">
+
+                        <tr style="background:black; color: white; ">
+                            <th scope="col">Item</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Action</th>
+
+                        </tr>
+                        <tr class="aw">
+
+                            <td><input type="text" name="itemname[]" placeholder="School Fees"></td>
+                            <td><input type="text" name="amount[]" placeholder="2000"></td>
+                            <td><input type="button" name="add" value="Add" style="background:gold; color: white; border-color: gold;width: 100%;height:2.1em; color:black" id="add"></td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+            <span>
+                <input type="submit" value="BillNow" name="approve" class="send">
+            </span><br>
+
+        </form>
+    </div>
+
+</div>
+
+
+
+<div class="modal ledger shadow" id='ledger' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <button type='button' data-dismiss='modal' aria-label='Close' class="close-btn" style="border:1px solid transparent;">
+        ×
+    </button>
+    <h3>Get Student Ledger</h3>
+    <div>
+        <form>
+            <label>Student ID</label><br>
+            <input type="text" placeholder="Search Student by ID"><br>
+
+            <span>
+                <input type="button" value="Search" name="search" class="sendd " onclick="togglelLedger()" data-dismiss='modal' aria-label='Close'>
+            </span><br>
+
+        </form>
+    </div>
+
+</div>
+
+
+<div class="modal ledger shadow" id='billssheet' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <button type='button' data-dismiss='modal' aria-label='Close' class="close-btn" style="border:1px solid transparent;">
+        ×
+    </button>
+    <h3>Get Student Bill Sheet</h3>
+    <div>
+        <form>
+            <label>Semester</label><br>
+            <select>
+                <option value="Sem1">Sem1</option>
+                <option value="Sem2">Sem2</option>
+                <option value="Sem3">Sem3</option>
+            </select><br>
+            <label>Student ID</label><br>
+            <input type="text" placeholder="Enter Student ID"><br>
+            <label>Year Badge</label><br>
+            <input type="date"><br>
+
+
+            <span>
+                <input type="button" value="Search" name="search" class="sendd " onclick="togglelBillssheet()" data-dismiss='modal' aria-label='Close'>
+            </span><br>
+
+        </form>
+    </div>
+
+</div>
+
+<div class="modal ledger shadow" id='income_schedule' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <button type='button' data-dismiss='modal' aria-label='Close' class="close-btn" style="border:1px solid transparent;">
+        ×
+    </button>
+    <h3>Income Schedule</h3>
+    <div>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label>Start Date</label><br>
+                    <input type="date"><br>
+                </div>
+                <div class="col">
+                    <label>End Date</label><br>
+                    <input type="date"><br>
+
+                </div>
+
+            </div>
+
+
+            <span>
+                <input type="button" value="Search" name="search" class="sendd " onclick="togglelIncomeSchedule()" data-dismiss='modal' aria-label='Close'>
+            </span><br>
+
+        </form>
+    </div>
+
+</div>
+
+
+<div class="modal ledger shadow" id='expendi' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <button type='button' data-dismiss='modal' aria-label='Close' class="close-btn" style="border:1px solid transparent;">
+        ×
+    </button>
+    <h3>Expenses Schedule</h3>
+    <div>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label>Start Date</label><br>
+                    <input type="date"><br>
+                </div>
+                <div class="col">
+                    <label>End Date</label><br>
+                    <input type="date"><br>
+
+                </div>
+
+            </div>
+
+
+            <span>
+                <input type="button" value="Search" name="search" class="sendd " onclick="togglelExpensesSchedule()" data-dismiss='modal' aria-label='Close'>
+            </span><br>
+
+        </form>
+    </div>
+
+</div>
+
+<div class="modal ledger shadow" id='profitlosss' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <button type='button' data-dismiss='modal' aria-label='Close' class="close-btn" style="border:1px solid transparent;">
+        ×
+    </button>
+    <h3>Profit & Loss</h3>
+    <div>
+        <form>
+            <div class="row">
+                <div class="col">
+                    <label>Start Date</label><br>
+                    <input type="date"><br>
+                </div>
+                <div class="col">
+                    <label>End Date</label><br>
+                    <input type="date"><br>
+
+                </div>
+
+            </div>
+
+
+            <span>
+                <input type="button" value="Search" name="search" class="sendd " onclick="togglelProfitloss()" data-dismiss='modal' aria-label='Close'>
+            </span><br>
+
+        </form>
+    </div>
+
+</div>
+
+
+
+<div class='modal fade adx' id='exp' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal-dialog' role='document'>
+        <div class='modal-content'>
+            <div class='modal-header hed'>
+                <h5 class='modal-title ' id='exampleModalLabel' style='color:red; font-family: monospace'>
+                    <h3 class="m-0 font-weight-bold " style="text-align: center;font-weight:bold">Choose Expenses Category</h3>
+                </h5>
+                <button class='close' type='button' data-dismiss='modal' aria-label='Close'>
+                     <span aria-hidden='true'>×</span>
+                    </button>
+            </div>
+
+            <div class='modal-body update'>
+                <form method='POST' enctype='multipart/form-data'>
+
+                    <label>Expenses</label><br>
+                    <select name="state_select" class="state_select">
+                            <option value="Fees">Administrative</option>
+                            <option value="Others">Non Administrative</option>
+                        </select><br>
+            </div>
+            <div class='modal-footer subbx '>
+                <input type='button' value='Back' class='pro' data-dismiss='modal' id='wwwwe'>
+                <input type='button' name='sub' value='Submit' class='cancc' id='wwwwe' onclick="onclickexpenses()" data-dismiss='modal'>
+
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal expenseform shadow" id='expenseform' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+
+    <button type='button' data-dismiss='modal' aria-label='Close' class="close-btn" style="border:1px solid transparent;">
+        ×
+    </button>
+
+
+    <h3>Expenses Form</h3>
+    <div>
+        <form>
+            <div class="row payf">
+
+
+            </div>
+            <label>Semester</label><br>
+            <select name="semester">
+                <option value="cash">sem1</option>
+                <option value="momo">sem2</option>
+                <option value="bank">sem3</option>
+            </select><br>
+            <label>Expense Category</label><br>
+            <select name="level">
+                <option value="Administrative">Administrative</option>
+                <option value="Non Administrative">Non Administrative</option>
+            </select><br>
+            <pre></pre>
+
+            <div class="f1">
+                <div class="input-fieldd">
+                    <table class="tablehead" id="table_fieldd" style="background:#D7DBDD;">
+
+                        <tr style="background:black; color: white; ">
+                            <th scope="col">Item</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Action</th>
+
+                        </tr>
+                        <tr class="aw">
+
+                            <td><input name="fees" type="text" name="itemname[]" placeholder="School Fees"></td>
+                            <td><input name="fees" type="text" name="itemname[]" placeholder="Enter Quantity"></td>
+                            <td><input name="fees" type="text" name="amount[]" placeholder="2000"></td>
+                            <td><input type="button" name="adds" value="Add" style="background:gold; color: white; border-color: gold;width: 100%;height:2.1em; color:black" id="adds"></td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+            <span>
+                <input type="submit" value="Submit" name="approve" class="send">
+            </span><br>
+
+        </form>
+    </div>
+
+</div>
+
+
+<div class="modal assetform shadow" id='assetform' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+
+    <button type='button' data-dismiss='modal' aria-label='Close' class="close-btn" style="border:1px solid transparent;">
+        ×
+    </button>
+
+
+    <h3>Asset Form</h3>
+    <div>
+        <form>
+            <div class="row payf">
+
+
+            </div>
+            <label>Purchase Date</label><br>
+            <input type="date"><br>
+            <label>Name of Item</label><br>
+            <input type="text" placeholder="Enter Item Name"><br>
+            <label>Asset No.</label><br>
+            <input type="text" placeholder="Enter code"><br>
+            <label>Quantity</label><br>
+            <input type="text" placeholder="Enter quantity"><br>
+            <label>Unit Price</label><br>
+            <input type="text" placeholder="Enter unit price"><br>
+            <label>Total Amount</label><br>
+            <input type="text" placeholder="Enter total Amount"><br>
+            <pre></pre>
+            <span>
+                <input type="submit" value="Submit" name="approve" class="send">
+            </span><br>
+
+        </form>
+    </div>
+
+</div>
+
+
+<div class="modal assetform shadow" id='salaryform' tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+
+    <button type='button' data-dismiss='modal' aria-label='Close' class="close-btn" style="border:1px solid transparent;">
+        ×
+    </button>
+
+
+    <h3>Salary Form</h3>
+    <div>
+        <form>
+            <div class="row payf">
+
+
+            </div>
+
+            <label>Name of Staff</label><br>
+            <input type="text" placeholder="Enter Item Name"><br>
+            <label>Gross Salary</label><br>
+            <input type="text" placeholder="Enter total Amount"><br>
+            <pre></pre>
+            <span>
+                <input type="submit" value="Submit" name="approve" class="send">
+            </span><br>
+
+        </form>
+    </div>
+
+</div>

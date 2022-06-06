@@ -1,0 +1,1914 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Accountant Dashboard</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet">
+
+
+
+
+
+    <style>
+        .imma {
+            width: 25%;
+            height: 20%;
+            background: white;
+            background: black;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        #topp {
+            width: 16.7%;
+            background: white;
+            color: black;
+        }
+        
+        .sideb {
+            background: #2C3E50;
+            overflow-y: scroll;
+        }
+        
+        .sideb #aa {
+            color: white;
+        }
+        
+        .sideb #aaa {
+            color: #D35400;
+        }
+        
+        .sideb #aaa1 {
+            color: #D35400;
+            margin-left: 9%;
+        }
+        
+        .sideb #aaa hover: {
+            color: white;
+        }
+        
+        .sideb .endside {
+            background: #2C3E50;
+        }
+        
+        #userbg {}
+        
+        #user {
+            color: black;
+        }
+        
+        .tre {
+            background: red;
+            border-radius: 5px;
+            margin-left: -5%;
+            margin-right: 13%;
+            padding-left: 2%;
+            padding-right: 2%;
+            color: white;
+            margin-left: -8%;
+            opacity: 0.7;
+            font-size: 10px;
+        }
+        
+        .bel {
+            color: #808B96;
+            margin-left: -8%;
+            padding-right: 2%;
+        }
+        
+        .prof {
+            width: 2.5em;
+            height: 2em;
+            border-radius: 35px;
+            margin-left: 4%;
+        }
+        
+        .dropp1 {
+            margin-left: 8%;
+            margin-right: 1%;
+        }
+        
+        .dropp2 {
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .dropp2:hover {
+            color: white;
+        }
+        
+        .menuu {
+            width: 90%;
+            margin-top: 2%;
+        }
+        
+        .menuu a {
+            width: 100%;
+            text-decoration: none;
+            color: black;
+            margin-left: 2%;
+        }
+        
+        .menuu #aaa {
+            padding-right: 2%;
+        }
+        
+        .menuu #wok {
+            margin-left: 2%;
+            margin-top: -9%;
+        }
+        
+        .menuu #wok:hover {
+            background: #F2F3F4;
+        }
+        
+        .menuu a:hover {
+            background: #F2F3F4;
+            width: 100%;
+            margin-bottom: 1%;
+        }
+        
+        .doit {
+            margin-top: 3%;
+        }
+        
+        .doit .dropdown .pagess {
+            margin-left: 9%;
+        }
+        
+        .bett {
+            padding-right: 2%;
+        }
+        
+        .bet {
+            background: #f35017;
+            border-radius: 20px;
+            padding-right: 7px;
+            padding-left: 7px;
+            padding-bottom: 3px;
+            color: #f9c953;
+            margin-left: 24px;
+        }
+        
+        .new-classs {
+            margin-top: 1%;
+            text-decoration: none;
+            margin-right: 2%;
+            background: #95a5a6;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 5px;
+            padding-right: 2%;
+            padding-left: 2%;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            border: 2px solid orange;
+        }
+        
+        .tees {
+            background: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-radius: 20px;
+            color: black;
+            margin-left: 2%;
+            border: 1px solid #e67e22;
+        }
+        
+        .tees h5 {
+            font-weight: bold;
+        }
+        
+        .adx {
+            margin-top: 11%;
+        }
+        
+        .adx form input {
+            width: 100%;
+            height: 2.5em;
+            border-radius: 5px;
+            border: 0.3px solid black;
+            padding-left: 2%;
+            background: transparent;
+        }
+        
+        .adx form select {
+            width: 100%;
+            height: 2.5em;
+            border-radius: 5px;
+            border: 0.3px solid black;
+            padding-left: 2%;
+            background: transparent;
+        }
+        
+        #www {
+            width: 24%;
+            height: 2em;
+            padding-left: 5%;
+            padding-top: 1%;
+        }
+        
+        #wwwwe {
+            width: 28%;
+            height: 2em;
+        }
+        
+        .subbx {
+            width: 73%;
+            border: transparent;
+        }
+        
+        .subb .cancc {
+            opacity: 2;
+            background: green;
+            color: white;
+            border-radius: 5px;
+            border: 0.3px solid green;
+            text-decoration: none;
+        }
+        
+        .subbx .canc {
+            background: red;
+            color: white;
+            border-radius: 5px;
+            border: 0.3px solid red;
+            text-decoration: none;
+        }
+        
+        .subbx .cancc {
+            opacity: 2;
+            background: green;
+            color: white;
+            border-radius: 5px;
+            border: 0.3px solid green;
+            text-decoration: none;
+        }
+        
+        .pro {
+            opacity: 2;
+            background: black;
+            border-radius: 5px;
+            color: white;
+            border: 0.3px solid black;
+        }
+        
+        label {
+            font-weight: bold;
+        }
+        
+        .card1 {
+            border-left: 5px solid #102473;
+        }
+        
+        .card2 {
+            border-left: 5px solid orange;
+        }
+        
+        .card3 {
+            border-left: 5px solid #ccb9a1;
+        }
+        
+        .card4 {
+            border-left: 5px solid #73c6b6;
+            ;
+        }
+        
+        .card11 {
+            border-left: 5px solid #2e86c1;
+        }
+        
+        .card12 {
+            border-left: 5px solid #27ae60;
+        }
+        
+        .card13 {
+            border-left: 5px solid #7adff8;
+        }
+        
+        .card14 {
+            border-left: 5px solid #cb4335;
+        }
+        
+        #chart_div {
+            border: 1px solid #cb4335;
+        }
+        
+        .news {
+            border: 1px solid black;
+            text-decoration: none;
+            border-radius: 5px;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 0.1%;
+            padding-bottom: 0.1%;
+            text-align: center;
+            color: black;
+        }
+        
+        .expmodal1 {
+            margin-top: 4%;
+            width: 100%;
+            margin-left: 0.2%;
+        }
+        
+        .in1 {
+            margin-right: 0.5%;
+        }
+        
+        .in2 {
+            margin-left: 0.5%;
+        }
+        
+        .expmodal2 input {
+            width: 110%;
+        }
+        
+        .notiz {
+            width: 28%;
+            text-align: center;
+            background: white;
+            padding-left: 0%;
+            padding-right: 0%;
+            border-radius: 20px;
+            color: black;
+            margin-left: 2%;
+            border: 1px solid #e67e22;
+        }
+        
+        .fn1 {
+            background: white;
+            height: 30em;
+            width: 45%;
+        }
+        
+        .fnn {
+            background: white;
+            width: 100%;
+        }
+        
+        .fn2 {
+            background: white;
+            width: 55%;
+            height: 22em;
+        }
+        
+        .tab1 {
+            margin-left: 1%;
+            overflow-y: scroll;
+        }
+        
+        textarea {
+            border: 3px solid #2c3e50;
+        }
+        
+        .tab1 table {
+            width: 99%;
+            margin-left: 1%;
+        }
+        
+        .tab1 ul {
+            list-style-type: none;
+        }
+        
+        .nott {
+            height: 100%;
+            overflow-y: scroll;
+        }
+        
+        .nott ul {
+            list-style-type: none;
+            margin-left: -6%;
+        }
+        
+        .nott ul li {
+            border-bottom: 1px solid black;
+            margin-bottom: 4%;
+            padding-bottom: 4%;
+        }
+        
+        .nott .d1 {
+            background: #1a5276;
+            text-decoration: none;
+            border-radius: 20px;
+            padding-top: 1px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            color: white;
+        }
+        
+        .tee {
+            background: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-radius: 5px;
+            color: black;
+            margin-left: 2%;
+            border: 1px solid white;
+        }
+        
+        .fnn2 h5 {
+            font-weight: bold;
+        }
+        
+        .fnn2 {
+            background: white;
+            padding-left: 2%;
+            padding-right: 2%;
+            border-radius: 5px;
+            color: black;
+            margin-left: 2%;
+            border: 1px solid white;
+        }
+        
+        .tee h5 {
+            font-weight: bold;
+        }
+        
+        .send {
+            margin-top: 2%;
+            background: #5dc12e;
+            border: 1px solid #5dc12e;
+            border-radius: 5px;
+            width: 18%;
+            color: white;
+        }
+        
+        .sends {
+            margin-top: 2%;
+            background: red;
+            border: 1px solid red;
+            border-radius: 5px;
+            width: 18%;
+            color: white;
+        }
+        
+        .del {
+            color: red;
+            margin-left: 5%;
+        }
+        
+        .app {
+            color: #5dc12e;
+        }
+        
+        .content {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            border-radius: 5px;
+            /*to hide popup initially*/
+        }
+        
+        .sales1 {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            border-radius: 5px;
+            /*to hide popup initially*/
+        }
+        
+        .sales2 {
+            position: absolute;
+            top: 30%;
+            left: 58%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            border-radius: 5px;
+            border: 1px solid black;
+            /*to hide popup initially*/
+        }
+        
+        .tax {
+            width: 50%;
+            margin-left: 25%;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: white;
+        }
+        
+        .tax input {
+            margin-left: 5%;
+            width: 90%;
+            height: 2.4em;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        
+        .tax form label {
+            margin-top: 5%;
+            margin-left: 5%;
+            color: black;
+            font-weight: bold;
+        }
+        
+        .tax .send {
+            margin-top: 2%;
+            background: #5dc12e;
+            border: 1px solid #5dc12e;
+            border-radius: 5px;
+            width: 18%;
+            color: white;
+            margin-left: 43%;
+            margin-bottom: 2%;
+        }
+        
+        .taxtab th {
+            border: 1.5px solid black;
+        }
+        
+        .ledger {
+            position: absolute;
+            margin-top: 20%;
+            left: 55%;
+            height: max-content;
+            transform: translate(-50%, -50%);
+            width: 510px;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            display: none;
+            border-radius: 5px;
+            border: 1px solid black;
+            /*to hide popup initially*/
+        }
+        
+        .sales3 {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            border-radius: 5px;
+            border: 1px solid black;
+            /*to hide popup initially*/
+        }
+        
+        .bill {
+            position: absolute;
+            margin-top: 30%;
+            left: 55%;
+            height: max-content;
+            transform: translate(-50%, -50%);
+            width: 510px;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            display: none;
+            border-radius: 5px;
+            border: 1px solid black;
+            /*to hide popup initially*/
+        }
+        
+        .bill input {
+            width: 100%;
+            height: 2.2em;
+            border-radius: 5px;
+        }
+        
+        .sales1 input {
+            width: 100%;
+            height: 2.2em;
+            border-radius: 5px;
+        }
+        
+        .ledger input {
+            width: 100%;
+            height: 2.2em;
+            border-radius: 5px;
+        }
+        
+        .ledger select {
+            width: 100%;
+            height: 2.2em;
+            border-radius: 5px;
+            background: white;
+        }
+        
+        .sales3 input {
+            width: 100%;
+            height: 2.2em;
+            border-radius: 5px;
+        }
+        
+        .sales1 form label {
+            color: black;
+            font-weight: bold;
+        }
+        
+        .bill form label {
+            color: black;
+            font-weight: bold;
+        }
+        
+        .sales3 form label {
+            color: black;
+            font-weight: bold;
+        }
+        
+        .sales1 h3 {
+            text-align: center;
+            font-weight: bold;
+            font-family: serif;
+        }
+        
+        .bill h3 {
+            text-align: center;
+            font-weight: bold;
+            font-family: serif;
+        }
+        
+        .ledger h3 {
+            text-align: center;
+            font-weight: bold;
+            font-family: serif;
+        }
+        
+        .sales3 h3 {
+            text-align: center;
+            font-weight: bold;
+            font-family: serif;
+        }
+        
+        .sales2 input {
+            width: 100%;
+            height: 2.4em;
+            border-radius: 5px;
+        }
+        
+        .sales2 form label {
+            color: black;
+            font-weight: bold;
+        }
+        
+        .sales2 h3 {
+            text-align: center;
+            font-weight: bold;
+            font-family: serif;
+        }
+        
+        .sales1 select {
+            width: 100%;
+            height: 2.2em;
+            border-radius: 5px;
+            background: white;
+        }
+        
+        .bill select {
+            width: 100%;
+            height: 2.2em;
+            border-radius: 5px;
+            background: white;
+        }
+        
+        .sales3 select {
+            width: 100%;
+            height: 2.2em;
+            border-radius: 5px;
+            background: white;
+        }
+        
+        .sales1 form {
+            width: 80%;
+            margin-left: 10%;
+        }
+        
+        .sales1 .sendd {
+            margin-top: 2%;
+            background: #5dc12e;
+            border: 1px solid #5dc12e;
+            border-radius: 5px;
+            width: 18%;
+            color: white;
+        }
+        
+        .ledger .sendd {
+            margin-top: 2%;
+            background: #5dc12e;
+            border: 1px solid #5dc12e;
+            border-radius: 5px;
+            width: 18%;
+            color: white;
+            margin-left: 42%;
+        }
+        
+        .ledgerr {
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+        
+        .leg1 {
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+        }
+        
+        .leg2 {
+            margin-left: 2%;
+            color: #d35400;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .sales1 .send {
+            margin-top: 2%;
+            background: #34495e;
+            border: 1px solid #34495e;
+            border-radius: 5px;
+            width: 18%;
+            color: white;
+            margin-left: 32%;
+        }
+        
+        .sales2 .send {
+            margin-top: 2%;
+            background: #34495e;
+            border: 1px solid #34495e;
+            border-radius: 5px;
+            width: 18%;
+            color: white;
+            margin-left: 40%;
+        }
+        
+        .contents {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            border-radius: 5px;
+            /*to hide popup initially*/
+        }
+        
+        .contentx {
+            position: absolute;
+            top: 4%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 150px;
+            text-align: center;
+            background-color: #f2f3f4;
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+            border-radius: 5px;
+            /*to hide popup initially*/
+        }
+        
+        .close-btn {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            padding-left: 5px;
+            padding-right: 5px;
+            cursor: pointer;
+        }
+        
+        .bgg {
+            width: 10%;
+            background: #5dc12e;
+            border-radius: 20px;
+        }
+        
+        .addnewsales {
+            text-decoration: none;
+            margin-top: 2%;
+            background: #5dc12e;
+            border: 1px solid #5dc12e;
+            border-radius: 5px;
+            width: 19%;
+            padding-left: 1%;
+            padding-right: 1%;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .cart {
+            float: right;
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 7%;
+            padding-left: 0.8%;
+            background: #d7dbdd;
+            cursor: pointer;
+        }
+        
+        .car {
+            width: 3%;
+            padding-left: 4px;
+            padding-right: 4px;
+            background: red;
+            color: white;
+            border-radius: 20px;
+        }
+        
+        .car2 {
+            border-left-color: 1px solid black;
+            margin-left: 15%;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 3px;
+            padding-right: 10px;
+            background: white;
+            border-top-color: white;
+            border-bottom-color: white;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .cartt {
+            border: 1px solid orangered;
+            border-radius: 5px;
+            width: 30%;
+            background: red;
+        }
+        
+        .carttt {
+            float: right;
+            text-decoration: none;
+            text-align: center;
+            background: #5dc12e;
+            margin-right: 3%;
+            border: 1px solid #5dc12e;
+            border-radius: 5px;
+            width: 6%;
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-top: 2.5px;
+            padding-bottom: 2.5px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .huh {
+            background: #2c3e50;
+        }
+        
+        .payf {
+            width: 98%;
+            margin-left: 1%;
+            border-bottom: 3px solid black;
+            margin-bottom: 3%;
+        }
+        
+        .tablehead input {
+            width: 100%;
+            height: 2.3em;
+        }
+        
+        .tablehead {
+            width: 100%;
+        }
+        
+        .legsum1 {
+            background: #f8f9f9;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        .rep {
+            background: white;
+            border-radius: 5px;
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border: #16686B solid 1px;
+        }
+        
+        .contt1 {
+            background: #16686B;
+            padding-bottom: 1%;
+        }
+        
+        .contt4 {
+            background: #16686B;
+        }
+        
+        .contt1 .hed {
+            text-align: center;
+            color: white;
+            padding-top: 2%;
+            font-family: serif;
+        }
+        
+        .contt4 .foot1 {
+            color: white;
+            padding-top: 2%;
+            font-family: serif;
+        }
+        
+        .contt4 .foot2 {
+            color: white;
+            padding-top: 2%;
+            font-family: serif;
+        }
+        
+        .foott {
+            color: white;
+        }
+        
+        .contt1 .hed2 {
+            text-align: center;
+            color: white;
+            padding-top: 1%;
+        }
+        
+        .contt2 {
+            margin-top: 1%;
+        }
+        
+        .tabbb {
+            margin-top: 2%;
+        }
+        
+        .one {
+            padding-left: 2%;
+        }
+        
+        .onee {
+            padding-left: 2%;
+        }
+        
+        .ttt {
+            width: 97%;
+        }
+        
+        .payroll {
+            text-align: center;
+        }
+        
+        #wox1 {
+            background: #e5e8e8;
+        }
+        
+        #wox2 {
+            background: #f8f9f9;
+        }
+        
+        #wox3 {
+            background: #e5e8e8;
+        }
+        
+        #wox4 {
+            background: #f8f9f9;
+        }
+        
+        #wox5 {
+            background: #e5e8e8;
+        }
+        
+        #wox6 {
+            background: #f8f9f9;
+        }
+        
+        #wox7 {
+            background: #e5e8e8;
+        }
+        
+        #wox8 {
+            background: #f8f9f9;
+        }
+        
+        #wox9 {
+            background: #e5e8e8;
+        }
+        
+        #wox10 {
+            background: #f8f9f9;
+        }
+        
+        #wox11 {
+            background: #e5e8e8;
+        }
+        
+        #wox12 {
+            background: #f8f9f9;
+        }
+        
+        .pay th {
+            border: 1px solid black;
+        }
+        
+        .pay td {
+            border: 1px solid black;
+        }
+        
+        .expenseform {
+            position: absolute;
+            margin-top: 28%;
+            left: 55%;
+            height: max-content;
+            transform: translate(-50%, -50%);
+            width: 510px;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            display: none;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        
+        .assetform {
+            position: absolute;
+            margin-top: 23%;
+            left: 55%;
+            height: max-content;
+            transform: translate(-50%, -50%);
+            width: 510px;
+            background-color: #e8eae6;
+            box-sizing: border-box;
+            padding: 10px;
+            display: none;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        
+        .expenseform input {
+            width: 100%;
+            height: 2.8em;
+            border-radius: 5px;
+        }
+        
+        .assetform input {
+            width: 100%;
+            height: 2.8em;
+            border-radius: 5px;
+        }
+        
+        .expenseform select {
+            width: 100%;
+            height: 2.8em;
+            border-radius: 5px;
+        }
+        
+        .expenseform h3 {
+            text-align: center;
+            font-weight: bold;
+            font-family: serif;
+        }
+        
+        .assetform h3 {
+            text-align: center;
+            font-weight: bold;
+            font-family: serif;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        @media(max-width: 768px) {
+            #topp {
+                width: 30.4%;
+                background: transparent;
+                color: black;
+                border: 0.1px solid white;
+            }
+            .dropp1 {
+                margin-left: 3%;
+                margin-right: 1%;
+            }
+            .addnewsales {
+                margin-left: 80%;
+                text-decoration: none;
+                margin-top: 2%;
+                background: #5dc12e;
+                border: 1px solid #5dc12e;
+                border-radius: 5px;
+                width: 15%;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+        
+        @media(max-width:400px) {
+            .studdlist {
+                overflow-x: scroll;
+            }
+            .addnewsales {
+                margin-left: 62%;
+                text-decoration: none;
+                margin-top: 2%;
+                background: #5dc12e;
+                border: 1px solid #5dc12e;
+                border-radius: 5px;
+                width: 30%;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-light flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 naa" href="#" id="topp"><span ><img src="../../../img/skuls4.png"class="imma"></span><span style="color:   #d35400  ;">SKULS</span><span style="color:  #1a5276 ;">TECH</span></a>
+        <div id="big">
+            <button style="background: #707B7C;" class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation" onclick="onMenu">
+              <span class="navbar-toggler-icon" id="menu" ></span>
+            </button>
+        </div>
+        <span class="form-control form-control-dark w-100" type="text" aria-label="Search"></span>
+        <div class="navbar-nav endside" id="userbg">
+            <div class="nav-item text-nowrap">
+
+                <ul style="list-style-type:none">
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link px-3" href="#" id="user">
+
+                            <i class="fas fa-bell fa-fw bel"></i>
+                            <span class="tre">3+</span>
+
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Paul Tengey</span>
+                            <img class="img-profile rounded-circle" src="../img/undraw_profile.svg" style="height: 2em; width:2em">
+
+
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse sideb">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <pre></pre>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" id="aa">
+                                <span data-feather="home" id="aaa"></span> Dashboard <span class="bet">Beta</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="aa" data-toggle="modal" data-target="#moresales">
+                                <span data-feather="file-text" id="aaa"></span> Sales
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#bills" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Billing
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:onclickexpenses()" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Expenses
+                            </a>
+                        </li>
+
+                        <li class="nav-item doit">
+
+                            <div class="dropdown" style="width:100%; background: transparent;">
+                                <i data-feather="file-text" id="aaa1" class="pagess"></i>
+                                <a class=" dropdown-toggle dropp2" data-toggle="dropdown">Reports
+                                <span class="caret"></span></a>
+
+                                <ul class="dropdown-menu menuu">
+                                    <span style="margin-bottom:2%;color:  #99a3a4 ; margin-left:5%">Generate Reports</span><br>
+                                    <a href="#" data-toggle="modal" data-target="#income_schedule">
+                                        <li id="wok"><i data-feather="file" id="aaa"></i>Income Schedule</li>
+                                    </a>
+                                    <a href="#" data-toggle="modal" data-target="#expendi">
+                                        <li id="wok"><i data-feather="file" id="aaa"></i>Expenses schedule </li>
+                                    </a>
+                                    <a href="#" data-toggle="modal" data-target="#profitlosss">
+                                        <li id="wok"><i data-feather="file" id="aaa"></i>Profit & Loss</li>
+                                    </a>
+                                    <a href="#" data-toggle="modal" data-target="#billssheet">
+                                        <li id="wok"><i data-feather="file" id="aaa"></i>Bill Sheet</li>
+                                    </a>
+                                    <a href="#" data-toggle="modal" data-target="#ledger">
+                                        <li id="wok"><i data-feather="file" id="aaa"></i>Ledger</li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span style="color:gold">Saved reports</span>
+                        <a class="link-secondary" href="#" aria-label="Add a new report" id="aa">
+                            <span data-feather="plus-circle" id="aaa"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:display_assetregister()" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Assets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:display_payroll()" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Salary
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:display_taxcalculator()" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Tax Calculator
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="aa">
+                                <span data-feather="file-text" id="aaa"></span> Social Engagement
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="aa">
+                                <span data-feather="layers" id="aaa"></span> Integrations
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4" id="account">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h5 class="tees " style="color: black ">Home</h5>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button>
+                    </div>
+                </div>
+
+                <!-- Content Row1 -->
+                <div class="row">
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4 ">
+                        <div class="card border-left-primary shadow h-100  card1">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1" style="color:#102473">
+                                            Monthly Income</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800" id=''> <span style="font-size: 20px; color:#102473;">GH<span>&#8373</span>100.00</div>
+                                        <span><a>Jan, 2022</a></span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class='fas fa-coins' style="font-size: 26px; color:#102473;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-success shadow h-100  card2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                            Yearly Income</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="">GH<span style=" color:black;">&#8373</span> 3000.00</div>
+                                        <span>Year: <a> 2022</a></span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class='far fa-money-bill-alt' style="font-size: 26px; color:#f67810;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4 ">
+                        <div class="card border-left-info shadow h-100 card3">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1" style="color:#546729 ">
+                                            Monthly Debt</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="">GH<span style=" color:black;">&#8373</span> 90.00</div>
+                                        <span><a>Jan, 2022</a></span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class='fas fa-chart-pie' style="font-size: 26px; color:#7d3c98;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pending Requests Card Example -->
+
+                    <div class="col-xl-3 col-md-6 mb-4 ">
+                        <div class="card border-left-warning shadow h-100 card4">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                            <span style="color: #6c3483 ">Yearly Debt</span>
+                                        </div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800">300.00</div>
+                                        <span>Year: <a> 2022</a></span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class='fas fa-balance-scale-left' style="font-size: 26px; color:#7d3c98;"></i>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- Content Row1 -->
+
+                <!-- Content Row2 -->
+                <div class="row">
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 card14">
+                            <div class="card-body">
+                                <div class="row no-gutters ">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                            <span style="color:  #cb4335  ">Monthly Expenses</span></div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="">GH<span style=" color:black;">&#8373</span> 2,090.00</div>
+                                        <span><a>Jan, 2022</a></span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class=" 	fas fa-cart-arrow-down fa-2x" style="color: #cb4335 ;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 mb-4 ">
+                        <div class="card border-left-primary shadow h-100  card11">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-uppercase mb-1" style="color:#2e86c1 ">
+                                            Monthly Profit</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="">GH<span style=" color:black;">&#8373</span> 4,090.00</div>
+                                        <span><a>Jan, 2022</a></span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class='fas fa-chart-line' style="font-size:26px; color:  #2e86c1 ;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-warning shadow h-100 card12">
+                            <div class="card-body">
+                                <div class="row no-gutters ">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                            Yearly Profit</div>
+                                        <div class="h5 mb-0 font-weight-bold text-gray-800" id="">GH<span style=" color:black;">&#8373</span> 30,000.00</div>
+                                        <span>Year<a> 2022</a></span>
+                                    </div>
+                                    <div class="col-auto">
+                                        <i class='fas fa-money-bill' style="font-size:26px;color: #27ae60 ;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="card border-left-primary shadow h-100 card13">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Monthly Tasks
+                                        </div>
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="progress progress-sm mr-2">
+                                                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <span>Jan,<a> 2022</a></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pending Requests Card Example -->
+
+                </div>
+
+                <!-- cont row 2 -->
+
+
+
+                <div class="row">
+
+                    <!-- Area Chart -->
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">Dropdown Header:</div>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body" id="chart_div" style="height: 24.5em;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart -->
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                                <div class="dropdown no-arrow">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
+                                        <div class="dropdown-header">Dropdown Header:</div>
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="chart-pie pt-4 pb-2" style="height: 19.5em;">
+                                    <canvas id="myPieChart"></canvas>
+                                </div>
+                                <div class="mt-4 text-center small">
+                                    <span class="mr-2">
+                                            <i class="fas fa-circle text-primary"></i> School Fees
+                                        </span>
+                                    <span class="mr-2">
+                                            <i class="fas fa-circle text-success"></i> P.T.A
+                                        </span>
+                                    <span class="mr-2">
+                                            <i class="fas fa-circle text-info"></i> Donation
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Dashboard Page Content Ends Here -->
+
+        <!-- Content Row -->
+
+    </div>
+    <!-- /.container-fluid -->
+
+
+
+    </div>
+    <div id="modal"></div>
+    <!-- End of Main Content -->
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+    <script>
+        google.charts.load('current', {
+            packages: ['corechart', 'line']
+        });
+        google.charts.setOnLoadCallback(drawCurveTypes);
+
+        function drawCurveTypes() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'X');
+            data.addColumn('number', 'Profit');
+            data.addColumn('number', 'Loss');
+
+            data.addRows([
+                [0, 0, 0],
+                [1, 10, 5],
+                [2, 23, 15],
+                [3, 17, 9],
+                [4, 18, 10],
+                [5, 9, 5],
+                [6, 11, 3],
+                [7, 27, 19],
+                [8, 33, 25],
+                [9, 40, 32],
+                [10, 32, 24],
+                [11, 35, 27],
+                [12, 30, 22],
+                [13, 40, 32],
+                [14, 42, 34],
+                [15, 47, 39],
+                [16, 44, 36],
+                [17, 48, 40],
+                [18, 52, 44],
+                [19, 54, 46],
+                [20, 42, 34],
+                [21, 55, 47],
+                [22, 56, 48],
+                [23, 57, 49],
+                [24, 60, 52],
+                [25, 50, 42],
+                [26, 52, 44],
+                [27, 51, 43],
+                [28, 49, 41],
+                [29, 53, 45],
+                [30, 55, 47],
+                [31, 60, 52],
+                [32, 61, 53],
+                [33, 59, 51],
+                [34, 62, 54],
+                [35, 65, 57],
+                [36, 62, 54],
+                [37, 58, 50],
+                [38, 55, 47],
+                [39, 61, 53],
+                [40, 64, 56],
+                [41, 65, 57],
+                [42, 63, 55],
+                [43, 66, 58],
+                [44, 67, 59],
+                [45, 69, 61],
+                [46, 69, 61],
+                [47, 70, 62],
+                [48, 72, 64],
+                [49, 68, 60],
+                [50, 66, 58],
+                [51, 65, 57],
+                [52, 67, 59],
+                [53, 70, 62],
+                [54, 71, 63],
+                [55, 72, 64],
+                [56, 73, 65],
+                [57, 75, 67],
+                [58, 70, 62],
+                [59, 68, 60],
+                [60, 64, 56],
+                [61, 60, 52],
+                [62, 65, 57],
+                [63, 67, 59],
+                [64, 68, 60],
+                [65, 69, 61],
+                [66, 70, 62],
+                [67, 72, 64],
+                [68, 75, 67],
+                [69, 80, 72],
+                [70, 84, 77]
+            ]);
+
+            var options = {
+                hAxis: {
+                    title: 'Month'
+                },
+                vAxis: {
+                    title: 'Amount'
+                },
+                backgroundColor: '#f1f8e9',
+                series: {
+                    1: {
+                        curveType: 'function'
+                    }
+                }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+    </script>
+
+
+
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
+
+
+
+
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#datepicker1").datepicker();
+            $("#datepicker2").datepicker();
+        });
+    </script>
+
+
+
+    <script>
+        $("#modal").load("modal.html");
+
+        function display_sales() {
+
+            if ($("select.state_select").val() == "Fees") {
+                $('#account').load("feesales.html #feesales");
+                $("#sidebarMenu").css('display', 'none');
+
+            } else {
+
+                if ($("select.state_select").val() != "Fees")
+
+                    $('#account').load("othersales.html #othersales");
+                $("#sidebarMenu").css('display', 'none');
+            }
+
+
+        }
+
+        function onclickexpenses() {
+            $('#account').load("expenses.html #expenseslist");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function togglelLedger() {
+            $('#account').load("ledger.html #ledgers");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function togglelBillssheet() {
+            $('#account').load("bill_sheet.html #billssheet");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function togglelIncomeSchedule() {
+            $('#account').load("income_schedule.html #income_schedule");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function togglelExpensesSchedule() {
+            $('#account').load("expenditure.html #expenses_schedule");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function togglelProfitloss() {
+            $('#account').load("profitloss.html #profitloss");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_assetregister() {
+            $('#account').load("asset_register.html #assetregister");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_payroll() {
+            $('#account').load("salary_schedule.html #salary");
+            $("#sidebarMenu").css('display', 'none');
+
+        }
+
+        function display_taxcalculator() {
+            $('#account').load("taxcalculator.html #taxcalculator");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+        function display_payslip() {
+            $('#account').load("payslip.html #payslip");
+            $("#sidebarMenu").css('display', 'none');
+        }
+
+
+
+
+        $(document).ready(function() {
+
+            $("#sidebarMenu").css('display', 'none');
+
+            $("#big").click(function() {
+                if ($("#sidebarMenu").css('display') != 'block') {
+                    $("#sidebarMenu").css('display', 'block');
+                } else if ($("#sidebarMenu").css('display') != 'none') {
+                    $("#sidebarMenu").css('display', 'none');
+                } else {}
+            });
+        });
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        // Function to show and hide the popup
+        function togglePopup() {
+            $(".content").toggle();
+        }
+
+        function toggleReject() {
+            $(".contents").toggle();
+        }
+
+        function toggleNewSales() {
+            $(".sales1 ").toggle();
+        }
+
+        function toggleNewSaless() {
+            $(".sales3 ").toggle();
+            $(".sales2 ").css('display', 'none');
+        }
+
+        function toggleNewStudent() {
+            $(".sales2 ").toggle();
+
+        }
+
+        function togglebill() {
+            $(".bill ").toggle();
+
+        }
+    </script>
+
+
+
+
+    <script>
+        w3IncludeHTML();
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var html = '<tr><td><input type="text" item="itemname[]" placeholder="Enter Item" required style="width:100%;height:2.3em;"></td><td><input type="text" amount="amount[]" placeholder="Enter Amount" required style="width:100%;height:2.3em;"></td><td><input type="button" name="remove" value="Remove" style="background:red; color: white; border-color: red; width:100%;height:2.1em;" id="remove"></td></tr>'
+
+            var x = 1;
+
+            $("#add").click(function() {
+                $("#table_field").append(html);
+            });
+            $("#table_field").on('click', '#remove', function() {
+                $(this).closest('tr').remove();
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var htmll = '<tr><td><input type="text" item="itemname[]" placeholder="Enter Item" required style="width:100%;height:2.3em;"></td><td><input type="text" item="itemname[]" placeholder="Enter Quantity" required style="width:100%;height:2.3em;"></td><td><input type="text" amount="amount[]" placeholder="Enter Amount" required style="width:100%;height:2.3em;"></td><td><input type="button" name="remove" value="Remove" style="background:red; color: white; border-color: red; width:100%;height:2.1em;" id="remove"></td></tr>'
+
+            var x = 1;
+
+            $("#adds").click(function() {
+                $("#table_fieldd").append(htmll);
+            });
+            $("#table_fieldd").on('click', '#remove', function() {
+                $(this).closest('tr').remove();
+            });
+
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+
+</html>
